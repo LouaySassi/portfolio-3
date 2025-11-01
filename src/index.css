@@ -1,0 +1,18 @@
+/* PLEASE NOTE: THESE TAILWIND IMPORTS SHOULD NEVER BE DELETED */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* DO NOT DELETE THESE TAILWIND IMPORTS, OTHERWISE THE STYLING WILL NOT RENDER AT ALL */
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+/* Custom smooth scroll with easing */
+* {
+  scroll-behavior: smooth;
+}
+/* Lazy scroll momentum for webkit browsers */
+body {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
