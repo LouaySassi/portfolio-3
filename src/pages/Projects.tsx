@@ -26,33 +26,22 @@ export function Projects() {
     title: 'DocAI',
     company: 'BestWay IT Tunisia, 2025',
     description: 'Intelligent patient management platform with AI-powered triage and secure document storage.',
-    image: 'https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/643ecb449eefba0f82ecf90f_stadiabt-banner-mobile.png',
-    srcset: 'https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/643ecb449eefba0f82ecf90f_stadiabt-banner-mobile-p-500.png 500w, https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/643ecb449eefba0f82ecf90f_stadiabt-banner-mobile-p-800.png 800w, https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/643ecb449eefba0f82ecf90f_stadiabt-banner-mobile-p-1080.png 1080w, https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/643ecb449eefba0f82ecf90f_stadiabt-banner-mobile-p-1600.png 1600w, https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/643ecb449eefba0f82ecf90f_stadiabt-banner-mobile.png 1728w',
+    image: '/docai.png',
     gradientOverlay: 'radial-gradient(circle at 50% 0px, rgba(127, 207, 255, 0.2), rgba(0, 0, 0, 0) 80%), radial-gradient(circle at 50% 0px, rgb(0, 51, 85), rgba(0, 0, 0, 0))'
   }, {
     id: 'binomi',
     title: 'Binomi',
     company: 'Personal Project, 2024',
     description: 'Swipe-based roommate matching platform for university students with lifestyle filtering.',
-    image: 'https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/643ecb1ff3e9aa457d70f041_thn-banner-mobile.png',
-    srcset: 'https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/643ecb1ff3e9aa457d70f041_thn-banner-mobile-p-500.png 500w, https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/643ecb1ff3e9aa457d70f041_thn-banner-mobile-p-800.png 800w, https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/643ecb1ff3e9aa457d70f041_thn-banner-mobile-p-1080.png 1080w, https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/643ecb1ff3e9aa457d70f041_thn-banner-mobile-p-1600.png 1600w, https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/643ecb1ff3e9aa457d70f041_thn-banner-mobile.png 1728w',
+    image: '/binomi.png',
     gradientOverlay: 'radial-gradient(circle at 50% 0px, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0))'
   }, {
     id: 'king-solar',
     title: 'King Solar Agency',
     company: 'Founder, 2024-2025',
     description: 'Web design & development agency serving the U.S. solar market with high-converting lead-gen websites.',
-    image: 'https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/6484164c1fe228802d311e8e_spotlight-tb.png',
-    srcset: 'https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/6484164c1fe228802d311e8e_spotlight-tb-p-500.png 500w, https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/6484164c1fe228802d311e8e_spotlight-tb-p-800.png 800w, https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/6484164c1fe228802d311e8e_spotlight-tb-p-1080.png 1080w, https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/6484164c1fe228802d311e8e_spotlight-tb-p-1600.png 1600w, https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/6484164c1fe228802d311e8e_spotlight-tb.png 1728w',
+    image: 'king solar.png',
     gradientOverlay: 'radial-gradient(circle at 50% 0px, rgba(8, 144, 251, 0.25), rgba(0, 0, 0, 0) 60%), repeating-radial-gradient(circle at 50% 0px, rgba(158, 5, 214, 0.4), rgba(0, 0, 0, 0))'
-  }, {
-    id: 'client-platforms',
-    title: 'Client Platforms',
-    company: 'BestWay IT Tunisia, 2023-2024',
-    description: 'E-commerce and travel booking systems with optimized performance and scalability.',
-    image: 'https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/648415f4acafd703035dd314_rbc-tb.png',
-    srcset: 'https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/648415f4acafd703035dd314_rbc-tb-p-500.png 500w, https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/648415f4acafd703035dd314_rbc-tb-p-800.png 800w, https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/648415f4acafd703035dd314_rbc-tb-p-1080.png 1080w, https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/648415f4acafd703035dd314_rbc-tb-p-1600.png 1600w, https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/648415f4acafd703035dd314_rbc-tb.png 1728w',
-    gradientOverlay: 'radial-gradient(circle at 50% 0px, rgba(0, 106, 195, 0.7), rgba(0, 0, 0, 0))'
   }];
   return <div className="w-full max-w-[1150px] px-4 sm:px-6 md:px-8 flex flex-col gap-12 relative pt-20">
       {/* Hero Section */}
@@ -138,7 +127,7 @@ export function Projects() {
                   </div>
                 </motion.div>
                 {/* Image */}
-                <motion.img layoutId={`project-image-${project.id}`} src={project.image} srcSet={project.srcset} sizes="100vw" loading="lazy" alt={project.title} className="relative z-[1] self-center max-w-[90%] block shadow-[0_40px_50px_10px_rgba(0,0,0,0.25)] transition-transform duration-300 ease-out group-hover:scale-[1.01]" style={{
+                <motion.img layoutId={`project-image-${project.id}`} src={project.image} sizes="100vw" loading="lazy" alt={project.title} className="relative z-[1] self-center max-w-[90%] block shadow-[0_40px_50px_10px_rgba(0,0,0,0.25)] transition-transform duration-300 ease-out group-hover:scale-[1.01]" style={{
               transform: index === 0 ? 'matrix(1, 0, 0, 1, 0, 0)' : undefined,
               transformStyle: index === 0 ? 'preserve-3d' : undefined
             }} />

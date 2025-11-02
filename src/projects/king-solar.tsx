@@ -7,7 +7,7 @@ export const kingSolar: ProjectData = {
   company: 'Founder',
   year: '2024-2025',
   description: 'Web design & development agency specializing in high-converting lead-generation websites for the U.S. solar market.',
-  image: 'https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/6484164c1fe228802d311e8e_spotlight-tb.png',
+  image: '/king solar.png',
   website: 'https://www.linkedin.com/company/king-solar-agency/', // <--- Changed to LinkedIn
   sections: [
     {

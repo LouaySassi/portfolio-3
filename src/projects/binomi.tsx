@@ -7,7 +7,7 @@ export const binomi: ProjectData = {
   company: 'Personal Project',
   year: '2024',
   description: 'Swipe-based roommate matching platform for university students with lifestyle filtering.',
-  image: 'https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/643ecb1ff3e9aa457d70f041_thn-banner-mobile.png',
+  image: '/binomi.png', // 
   website: 'https://binomi.netlify.app', // <--- ADDED: Project website link
   sections: [
     {

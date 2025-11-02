@@ -1,185 +1,125 @@
-// src/projects/docai.ts (or wherever your project data is)
+// src/projects/docai.ts
 import React from 'react';
 import { ProjectData } from './types';
 
 export const docai: ProjectData = {
   title: 'DocAI',
-  company: 'BestWay IT Tunisia',
+  company: 'BestwayIT',
   year: '2025',
-  description: 'Intelligent patient management platform with AI-powered triage and secure document storage.',
-  image: 'https://cdn.prod.website-files.com/63dcb6e1a80e9454b630f4c4/643ecb449eefba0f82ecf90f_stadiabt-banner-mobile.png',
-  website: 'https://docaitn.netlify.app', // <--- ADDED: Project website link
+  description: 'An intelligent, integrated platform designed to streamline the healthcare experience for patients, doctors, and clinics through AI-powered assistance and unified service management.',
+  image: '/docai.png',
+  website: 'https://docaitn.netlify.app', // Replace with your actual project link (e.g., GitHub, live demo)
   sections: [
     {
       id: 'overview',
-      title: 'Overview',
+      title: 'Project Overview',
       content: (
         <div className="flex flex-col gap-4">
           <p>
-            DocAI is an intelligent patient management platform designed to
-            streamline healthcare operations through AI-powered triage and
-            secure document storage. The platform significantly reduces patient
-            wait times and improves overall care quality through automated
-            prioritization and efficient data handling.
+            DocAI addresses the fragmentation and inefficiency in current healthcare systems by providing a unified digital platform. It connects patients, doctors, and clinic administrators, creating a more accessible, efficient, and cohesive healthcare journey for all users.
           </p>
           <p>
-            Built for modern healthcare facilities, DocAI integrates seamlessly
-            with existing systems while providing a user-friendly interface for
-            both medical staff and administrators. It aims to empower healthcare
-            providers with advanced tools for better patient outcomes.
+            The core objective is to reduce administrative burdens, shorten treatment delays, and enhance the overall patient experience by leveraging an AI-focused approach for guidance, booking, and data management.
           </p>
-          <h3>Key Objectives</h3>
-          <ul>
-            <li>Reduce patient waiting times by leveraging AI.</li>
-            <li>Enhance data security and compliance (HIPAA).</li>
-            <li>Improve operational efficiency for medical staff.</li>
-            <li>Provide real-time insights into facility performance.</li>
-          </ul>
         </div>
       )
     },
     {
       id: 'features',
       title: 'Key Features',
-      // Content is now an array of feature objects, matching Binomi's structure
       content: (
         [
           {
-            title: 'AI-Powered Triage',
-            description: 'Intelligent patient prioritization based on real-time symptoms and comprehensive medical history, reducing wait times by up to 40% and ensuring critical cases are addressed promptly.',
+            title: 'For Patients: AI Health Assistant & Health Hub',
+            description: 'Patients are guided by an AI-powered chatbot for symptom assessment, which can differentiate between normal and urgent cases. The AI assists in finding and booking appointments with the right specialists at nearby clinics. The "Health Hub" serves as a personal dashboard to view upcoming appointments, manage medical records, and securely upload/view documents.',
             screenshots: [
-              'https://via.placeholder.com/800x600/1e1e1e/f2f2f2?text=DocAI+Triage+Screenshot+1',
-              'https://via.placeholder.com/800x600/1e1e1e/f2f2f2?text=DocAI+Triage+Screenshot+2',
+              '/docai chat.png',
+              '/docai patient dashboard.png',
             ]
           },
           {
-            title: 'Secure Document Storage',
-            description: 'HIPAA-compliant, end-to-end encrypted storage for all patient records, medical images, and administrative documents, featuring granular role-based access control and comprehensive audit logging.',
+            title: 'For Doctors: Unified Workspace & Consultation Management',
+            description: 'Doctors receive a dedicated workspace to manage their daily schedules and view assigned appointments, with urgent cases clearly highlighted. A comprehensive consultation interface allows them to document diagnoses, write notes, issue prescriptions, and access a patient\'s medical history and documents in real-time, streamlining the clinical workflow.',
             screenshots: [
-              'https://via.placeholder.com/800x600/1e1e1e/f2f2f2?text=DocAI+Storage+Screenshot+1',
+              '/docai doctor dashboard.png',
+              '/doctor consultation.png',
             ]
           },
           {
-            title: 'Real-time Dashboard',
-            description: 'A dynamic, real-time dashboard offering live monitoring of patient flow, staff allocation, resource utilization, and critical facility metrics, enabling proactive decision-making.',
+            title: 'For Clinics: Centralized Administration Dashboard',
+            description: 'Clinic administrators get a powerful dashboard for a complete operational overview. Key functionalities include managing the entire clinic\'s appointment schedule, manually assigning appointments to doctors, and overseeing the doctor roster. This includes a complete workflow for reviewing and approving/rejecting applications from new doctors wishing to join the clinic.',
             screenshots: [
-              'https://via.placeholder.com/800x600/1e1e1e/f2f2f2?text=DocAI+Dashboard+Screenshot+1',
-              'https://via.placeholder.com/800x600/1e1e1e/f2f2f2?text=DocAI+Dashboard+Screenshot+2',
+              '/docai clinic dashboard.png',
             ]
           },
           {
-            title: 'Integrated Communication',
-            description: 'Seamless in-platform communication tools allowing secure messaging between medical staff, patients, and administrators, improving coordination and response times.',
+            title: 'Secure Document Management with IBM FileNet',
+            description: 'A core pillar of the platform is its robust security. The system integrates with IBM FileNet Content Engine for the secure storage and retrieval of all patient medical documents. This ensures sensitive data is managed with enterprise-grade security and confidentiality, while metadata is handled by the core application for efficient access.',
             screenshots: [
-              'https://via.placeholder.com/800x600/1e1e1e/f2f2f2?text=DocAI+Comms+Screenshot+1',
+              '/docai storage 1.png',
+              '/docai storage 2.png',
             ]
           },
         ]
       )
     },
     {
+      id: 'architecture',
+      title: 'Architectural Approach',
+      content: (
+        <div className="flex flex-col gap-4">
+          <p>
+            DocAI is built on a <strong>Microservices Architecture</strong> to ensure scalability and maintainability. The logical components are decoupled, allowing for independent development, deployment, and scaling of services.
+          </p>
+          <p>
+            The architecture consists of a React frontend, a Spring Boot backend for REST APIs, a PostgreSQL database for structured data, the IBM FileNet instance for document storage, and a Python (Flask) proxy to communicate with the external Gemini AI model. This separation of concerns creates a robust and flexible system.
+          </p>
+        </div>
+      )
+    },
+    {
       id: 'tech-stack',
-      title: 'Tech Stack',
+      title: 'Technology Stack',
       content: (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div>
             <h4>Frontend</h4>
-            <p>React, TypeScript, Tailwind CSS, Framer Motion, D3.js (for visualizations)</p>
+            <p>React, JavaScript, Tailwind CSS</p>
           </div>
           <div>
             <h4>Backend</h4>
-            <p>Node.js, Express, PostgreSQL (with Sequelize ORM), Redis (for caching & pub/sub)</p>
+            <p>Spring Boot (Java), REST APIs</p>
           </div>
           <div>
-            <h4>AI/ML</h4>
-            <p>OpenAI GPT-4, Custom ML Models (Python/Scikit-learn), TensorFlow.js (for client-side models)</p>
+            <h4>Database</h4>
+            <p>PostgreSQL</p>
           </div>
           <div>
-            <h4>Infrastructure</h4>
-            <p>AWS (EC2, S3, RDS, EKS), Docker, Kubernetes, CI/CD with GitHub Actions, Prometheus & Grafana for monitoring</p>
+            <h4>AI & Document Storage</h4>
+            <p>Google Gemini (via Flask proxy), IBM FileNet Content Engine</p>
+          </div>
+          <div>
+            <h4>Security</h4>
+            <p>JWT (JSON Web Tokens), Spring Security, BCrypt Hashing</p>
+          </div>
+          <div>
+            <h4>DevOps & Tools</h4>
+            <p>Git, GitLab, Docker, Postman, StarUML</p>
           </div>
         </div>
       )
     },
     {
-      id: 'challenges',
-      title: 'Challenges & Solutions',
+      id: 'conclusion',
+      title: 'Conclusion & Impact',
       content: (
-        <div className="flex flex-col gap-6">
-          <div>
-            <h4>Challenge: Real-time Data Synchronization</h4>
-            <p>
-              **Solution:** Implemented robust WebSocket connections coupled with Redis pub/sub
-              for instant data updates across all connected client interfaces. This eliminated
-              the need for constant database polling, ensuring a highly responsive user experience.
-            </p>
-          </div>
-          <div>
-            <h4>Challenge: Strict HIPAA Compliance</h4>
-            <p>
-              **Solution:** Designed and implemented an end-to-end encryption system for all
-              sensitive patient data. This included comprehensive audit logging, granular
-              role-based access control, and regular third-party security audits to meet
-              and exceed all HIPAA regulatory requirements.
-            </p>
-          </div>
-          <div>
-            <h4>Challenge: Achieving High AI Model Accuracy</h4>
-            <p>
-              **Solution:** Conducted extensive fine-tuning of AI models on diverse and large
-              medical datasets. We established a continuous feedback loop from clinical staff
-              to retrain and improve models, achieving a consistent accuracy rate of over 95%
-              for patient triage and diagnosis support.
-            </p>
-          </div>
-          <div>
-            <h4>Challenge: Scalability & High Availability</h4>
-            <p>
-              **Solution:** Deployed the application on AWS using Docker and Kubernetes. This
-              containerized microservices architecture provides horizontal scalability,
-              self-healing capabilities, and ensures high availability even under extreme load.
-            </p>
-          </div>
-        </div>
-      )
-    },
-    {
-      id: 'results',
-      title: 'Results & Impact',
-      content: (
-        <div className="flex flex-col gap-6">
-          <div>
-            <h4>40% Reduction in Patient Wait Times</h4>
-            <p>
-              The AI-powered triage system dramatically reduced average patient wait times
-              across all departments, leading to improved patient satisfaction and better
-              resource allocation within the facility.
-            </p>
-          </div>
-          <div>
-            <h4>95% Staff Satisfaction Rate</h4>
-            <p>
-              Surveys among medical staff indicated a 95% satisfaction rate, attributing
-              improvements to streamlined workflows, reduced administrative burden, and
-              the intuitive nature of the DocAI platform.
-            </p>
-          </div>
-          <div>
-            <h4>Zero Security Incidents in Production</h4>
-            <p>
-              Maintained a flawless security record with no reported breaches or incidents
-              in production, validated through continuous security monitoring, regular audits,
-              and adherence to industry best practices.
-            </p>
-          </div>
-          <div>
-            <h4>Increased Operational Efficiency by 25%</h4>
-            <p>
-              Implementation of DocAI led to a measurable 25% increase in overall
-              operational efficiency for the healthcare facility, optimizing patient flow
-              and administrative tasks.
-            </p>
-          </div>
+        <div className="flex flex-col gap-4">
+          <p>
+            The DocAI platform marks a significant step towards a more efficient, user-friendly, and integrated healthcare management system. By successfully developing distinct, feature-rich modules for patients, doctors, and clinics, the project provides a solid foundation for improving coordination and access to medical services.
+          </p>
+          <p>
+            Developed using the Scrum methodology, the project demonstrates a modern, agile approach to building complex software, resulting in a practical solution that enhances the efficiency of healthcare tasks and ensures secure, accessible medical information management.
+          </p>
         </div>
       )
     },

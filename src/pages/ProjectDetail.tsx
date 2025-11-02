@@ -181,7 +181,7 @@ export function ProjectDetail() {
                       {featureItem.description}
                     </p>
                     {featureItem.screenshots && featureItem.screenshots.length > 0 && (
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                      <div className="mt-4">
                         {featureItem.screenshots.map((screenshotUrl: string, screenshotIndex: number) => (
                           <motion.div
                             key={screenshotIndex}
@@ -196,9 +196,7 @@ export function ProjectDetail() {
                               alt={`${featureItem.title} screenshot ${screenshotIndex + 1}`}
                               className="w-full h-auto object-cover"
                             />
-                             <div className="absolute inset-0 flex items-center justify-center text-white/50 bg-black/30 text-sm font-light">
-                               Placeholder Image
-                             </div>
+                             
                           </motion.div>
                         ))}
                       </div>
