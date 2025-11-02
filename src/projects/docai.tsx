@@ -9,6 +9,7 @@ export const docai: ProjectData = {
   description: 'An intelligent, integrated platform designed to streamline the healthcare experience for patients, doctors, and clinics through AI-powered assistance and unified service management.',
   image: '/docai.png',
   website: 'https://docaitn.netlify.app', // Replace with your actual project link (e.g., GitHub, live demo)
+  logo: '/docai-logo.svg',
   sections: [
     {
       id: 'overview',

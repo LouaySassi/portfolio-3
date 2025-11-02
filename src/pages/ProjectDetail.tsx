@@ -1,5 +1,3 @@
-// src/pages/ProjectDetail.tsx (No changes needed from previous step)
-
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
@@ -67,7 +65,7 @@ export function ProjectDetail() {
             Back to Projects
           </span>
         </button>
-        {/* ScrollSpySidebar */}
+        {/* ScrollSpySidebar - FIXED */}
         <ScrollSpySidebar
           sections={project.sections.map(section => ({
             ...section,
@@ -90,15 +88,26 @@ export function ProjectDetail() {
           transition={{ duration: 0.2, delay: 0.05 }}
         >
           <div className="flex flex-col gap-2">
-            <h1
-              className="text-4xl sm:text-5xl font-medium"
-              style={{
-                fontFamily: '"Neue Montreal", sans-serif',
-                textShadow: 'rgba(255, 255, 255, 0.2) 0px -2px 10px'
-              }}
-            >
-              {project.title}
-            </h1>
+            {/* --- CHANGE: Container for logo and title --- */}
+            <div className="flex items-center gap-4">
+              {project.logo && (
+                <img 
+                  src={project.logo} 
+                  alt={`${project.title} logo`} 
+                  className="h-16 w-auto" // Logo styling
+                />
+              )}
+              <h1
+                className="text-5xl sm:text-6xl font-medium" // Increased title size
+                style={{
+                  fontFamily: '"Neue Montreal", sans-serif',
+                  textShadow: 'rgba(255, 255, 255, 0.2) 0px -2px 10px'
+                }}
+              >
+                {project.title}
+              </h1>
+            </div>
+            {/* --- END CHANGE --- */}
             <p
               className="text-lg sm:text-xl text-[#f2f2f2]/60"
               style={{ fontFamily: '"Neue Montreal", sans-serif' }}
@@ -213,16 +222,6 @@ export function ProjectDetail() {
                 {section.content}
               </div>
             )}
-
-            {/* Optional: A subtle separator after each section (excluding the last one) */}
-            {/* {index < project.sections.length - 1 && (
-              <div
-                className="w-full h-px mt-12"
-                style={{
-                  background: 'linear-gradient(to right, transparent, rgba(242, 242, 242, 0.05) 20%, rgba(242, 242, 242, 0.15) 50%, rgba(242, 242, 242, 0.05) 80%, transparent)'
-                }}
-              />
-            )} */}
           </motion.section>
         ))}
       </div>

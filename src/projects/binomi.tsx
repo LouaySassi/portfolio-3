@@ -8,7 +8,8 @@ export const binomi: ProjectData = {
   year: '2024',
   description: 'Swipe-based roommate matching platform for university students with lifestyle filtering.',
   image: '/binomi.png', // 
-  website: 'https://binomi.netlify.app', // <--- ADDED: Project website link
+  website: 'https://binomi.netlify.app',
+  logo:"/binomi logo.png",
   sections: [
     {
       id: 'overview',
@@ -44,29 +45,25 @@ export const binomi: ProjectData = {
             title: 'Smart Matching Algorithm',
             description: 'Proprietary algorithm matches users based on detailed lifestyle compatibility scores and preferences, leveraging advanced machine learning techniques to refine suggestions and improve accuracy over time.',
             screenshots: [
-              'https://via.placeholder.com/800x600/1e1e1e/f2f2f2?text=Smart+Matching+Screenshot+1', // Placeholder URL
-              'https://via.placeholder.com/800x600/1e1e1e/f2f2f2?text=Smart+Matching+Screenshot+2', // Another placeholder
+              '/binomi faces.png', // Placeholder URL
             ]
           },
           {
             title: 'Interactive Profiles',
             description: 'Comprehensive and visually rich profiles featuring photos, personal interests, and in-depth lifestyle preferences, allowing users to gain a holistic understanding of potential roommates.',
             screenshots: [
-              'https://via.placeholder.com/800x600/1e1e1e/f2f2f2?text=Interactive+Profiles+Screenshot+1',
             ]
           },
           {
             title: 'In-App Messaging',
             description: 'Secure and real-time chat functionality enabling matched users to conveniently discuss living arrangements, ask questions, and build rapport within the application itself.',
             screenshots: [
-              'https://via.placeholder.com/800x600/1e1e1e/f2f2f2?text=In-App+Messaging+Screenshot+1',
             ]
           },
           {
             title: 'University Verification',
             description: 'A robust verification system that authenticates all users as currently enrolled university students, significantly enhancing platform safety and fostering a trustworthy community environment.',
             screenshots: [
-              'https://via.placeholder.com/800x600/1e1e1e/f2f2f2?text=University+Verification+Screenshot+1',
             ]
           },
         ]
@@ -79,20 +76,17 @@ export const binomi: ProjectData = {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div>
             <h4>Frontend</h4>
-            <p>React, TypeScript, Tailwind CSS, Framer Motion, Axios</p>
+            <p>React, JavaScript, Tailwind CSS, Framer Motion, Axios</p>
           </div>
           <div>
             <h4>Backend</h4>
-            <p>Node.js, Express, MongoDB, Mongoose, Socket.io, Redis</p>
+            <p>Node.js, Express, MongoDB, Mongoose, WebSocket</p>
           </div>
           <div>
             <h4>Authentication</h4>
             <p>JWT (JSON Web Tokens), OAuth 2.0 Integration, University Email Verification</p>
           </div>
-          <div>
-            <h4>Infrastructure</h4>
-            <p>Vercel for Frontend Deployment, MongoDB Atlas for Database, AWS S3 for Media Storage, Docker for Containerization</p>
-          </div>
+         
         </div>
       )
     },
@@ -104,7 +98,7 @@ export const binomi: ProjectData = {
           <div>
             <h4>Challenge: Matching Algorithm Accuracy</h4>
             <p>
-              **Solution:** Developed a sophisticated, weighted scoring system. This algorithm
+              <b>Solution:</b> Developed a sophisticated, weighted scoring system. This algorithm
               dynamically adjusts compatibility predictions based on continuous user feedback
               and the success rate of previous matches. It was refined through A/B testing
               and iterative data analysis to ensure high precision.
@@ -113,7 +107,7 @@ export const binomi: ProjectData = {
           <div>
             <h4>Challenge: Ensuring User Safety & Verification</h4>
             <p>
-              **Solution:** Implemented a multi-layered verification process including mandatory
+              <b>Solution:</b> Implemented a multi-layered verification process including mandatory
               university email validation and a secure photo verification system. This significantly
               enhances the authenticity of student profiles and minimizes fraudulent accounts.
               Robust reporting and moderation tools were also integrated.
@@ -122,7 +116,7 @@ export const binomi: ProjectData = {
           <div>
             <h4>Challenge: Real-time Chat Performance under Load</h4>
             <p>
-              **Solution:** Optimized Socket.io connections by incorporating connection pooling
+              <b>Solution:</b> Optimized WebSocket connections by incorporating connection pooling
               and a message queuing system. This architecture ensures a consistently seamless
               and responsive chat experience, even during peak usage with a high volume of
               concurrent users.

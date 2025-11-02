@@ -6,175 +6,112 @@ export const kingSolar: ProjectData = {
   title: 'King Solar Agency',
   company: 'Founder',
   year: '2024-2025',
-  description: 'Web design & development agency specializing in high-converting lead-generation websites for the U.S. solar market.',
+  description: 'A results-driven web design & development agency focused on delivering exponential lead growth for solar companies in the U.S. market.',
   image: '/king solar.png',
-  website: 'https://www.linkedin.com/company/king-solar-agency/', // <--- Changed to LinkedIn
+  website: 'https://www.linkedin.com/company/king-solar-agency/',
+  logo: '/king-solar-agency.png',
   sections: [
     {
       id: 'overview',
-      title: 'Overview',
+      title: 'Agency Overview',
       content: (
         <div className="flex flex-col gap-4">
           <p>
-            King Solar Agency is a specialized web design and development firm
-            dedicated to empowering solar installation companies across the
-            United States. We craft bespoke, conversion-optimized websites
-            that excel at generating high-quality leads, driving sales,
-            and establishing a strong online presence for our clients.
+            King Solar Agency is a specialized firm dedicated to one primary goal: generating high-quality, high-volume leads for solar installation companies. We design and develop bespoke, conversion-optimized websites that serve as powerful customer acquisition funnels.
           </p>
           <p>
-            Our approach blends cutting-edge design, robust technical
-            implementation, and strategic SEO to ensure our clients not
-            only look professional but also achieve measurable business growth.
+            Our strategy combines compelling design with aggressive internal and external SEO, leveraging Google's latest tools to ensure our clients dominate their local markets and achieve measurable, rapid business growth.
           </p>
-          <h3>Our Mission</h3>
-          <ul>
-            <li>To be the leading web partner for the U.S. solar industry.</li>
-            <li>To deliver measurable ROI through exceptional web experiences.</li>
-            <li>To simplify the digital landscape for solar businesses.</li>
-          </ul>
         </div>
       )
     },
     {
-      id: 'services', // Renamed from 'features'
-      title: 'Services Offered', // Renamed title
+      id: 'case-studies',
+      title: 'Client Success Stories', // Renamed for more impact
       content: (
-        [ // Array of service objects
+        [
           {
-            title: 'Custom Website Design & Development',
-            description: 'Creating visually stunning and highly functional websites tailored to the unique branding and lead generation goals of solar companies.',
+            title: 'Client Success: Gazda Solar',
+            description: 'Gazda Solar faced challenges with low online visibility and inconsistent lead flow. We engineered a high-converting website funnel for them using WordPress and the Divi builder. By implementing a professional internal and external SEO strategy, Gazda Solar saw exponential growth in qualified leads within the first 3 months of launch.',
             screenshots: [
-              'https://via.placeholder.com/800x600/1e1e1e/f2f2f2?text=Web+Design+Example+1',
+              '/gazda-solar-screenshot.png', // Replace with your actual screenshot path
             ]
           },
           {
-            title: 'Conversion Rate Optimization (CRO)',
-            description: 'Implementing A/B testing, user flow analysis, and strategic call-to-actions to maximize the percentage of website visitors who convert into qualified leads.',
+            title: 'Client Success: SolenergyNY',
+            description: 'SolenergyNY needed to strengthen their digital presence to compete in a crowded market. We built a custom, optimized website on the WordPress/Divi platform, focusing on user experience and a clear conversion path. Our targeted SEO campaign, utilizing the latest Google tools, resulted in exponential lead growth in just the first quarter after deployment.',
             screenshots: [
-              'https://via.placeholder.com/800x600/1e1e1e/f2f2f2?text=CRO+Dashboard+Example',
-            ]
-          },
-          {
-            title: 'SEO & Local Search Optimization',
-            description: 'Ensuring clients rank high in search engine results for relevant keywords and local searches, driving organic traffic and increasing visibility in target markets.',
-            screenshots: [
-              'https://via.placeholder.com/800x600/1e1e1e/f2f2f2?text=SEO+Analytics+Example',
-            ]
-          },
-          {
-            title: 'Lead Management & CRM Integration',
-            description: 'Setting up and integrating CRM systems to help clients efficiently track, manage, and follow up on leads generated through their new websites.',
-            screenshots: [
-              'https://via.placeholder.com/800x600/1e1e1e/f2f2f2?text=CRM+Integration+Example',
+              '/solenergyny-screenshot.png', // Replace with your actual screenshot path
             ]
           },
         ]
       )
     },
     {
-      id: 'case-studies', // New section for case studies
-      title: 'Case Studies',
+      id: 'services',
+      title: 'Core Services',
       content: (
         [
           {
-            title: 'Client Spotlight: Green Energy Solutions',
-            description: 'Green Energy Solutions, a mid-sized solar installer, struggled with an outdated website and low lead volume. We redesigned their site with a focus on local SEO and a dynamic solar calculator. **Result:** 120% increase in qualified leads within 3 months and a 75% boost in local search rankings.',
-            screenshots: [
-              'https://via.placeholder.com/800x600/1e1e1e/f2f2f2?text=Green+Energy+Solutions+Screenshot',
-            ]
+            title: 'High-Converting Website Development',
+            description: 'We build fast, professional websites on the WordPress & Divi platform, specifically designed as lead-generation funnels tailored to the solar industry.',
           },
           {
-            title: 'Client Spotlight: Sun Power Pros',
-            description: 'Sun Power Pros needed to expand their market reach. We developed a scalable, conversion-driven platform with integrated marketing funnels. **Result:** Expanded into 3 new states, achieved a 65% conversion rate on key landing pages, and reduced cost per lead by 30%.',
-            screenshots: [
-              'https://via.placeholder.com/800x600/1e1e1e/f2f2f2?text=Sun+Power+Pros+Screenshot',
-            ]
+            title: 'Professional SEO (Internal & External)',
+            description: 'Our comprehensive SEO strategies ensure clients rank prominently in local search results, driving a consistent stream of organic traffic and capturing high-intent customers.',
+          },
+          {
+            title: 'Conversion Rate Optimization (CRO)',
+            description: 'We meticulously analyze user behavior and implement data-driven optimizations to ensure that website visitors convert into actionable leads at the highest possible rate.',
           },
         ]
       )
     },
     {
       id: 'tech-stack',
-      title: 'Our Preferred Technologies', // Renamed title
+      title: 'Platforms & Technologies',
       content: (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div>
-            <h4>Frontend</h4>
-            <p>React, Next.js, TypeScript, Tailwind CSS, SASS</p>
+            <h4>Client Website Platform</h4>
+            <p>WordPress, Divi Builder, Custom Plugins</p>
           </div>
           <div>
-            <h4>Backend & CMS</h4>
-            <p>Next.js API Routes, Supabase, PostgreSQL, Headless CMS (e.g., Sanity.io)</p>
+            <h4>SEO & Analytics Tools</h4>
+            <p>Google Analytics 4, Google Search Console, Google Tag Manager, Ahrefs, SEMrush</p>
           </div>
           <div>
-            <h4>Marketing & Analytics</h4>
-            <p>Google Analytics 4, Google Tag Manager, HubSpot CRM, Mailchimp</p>
+            <h4>Custom Development</h4>
+            <p>For bespoke projects, we utilize modern stacks including React, Next.js, TypeScript, and Tailwind CSS.</p>
           </div>
           <div>
-            <h4>Deployment & Infrastructure</h4>
-            <p>Vercel, Cloudflare CDN, AWS S3, GitHub Actions (CI/CD)</p>
-          </div>
-        </div>
-      )
-    },
-    {
-      id: 'agency-challenges', // Renamed from 'challenges'
-      title: 'Agency Challenges & Solutions', // Renamed title
-      content: (
-        <div className="flex flex-col gap-6">
-          <div>
-            <h4>Challenge: Consistently Delivering High Conversions</h4>
-            <p>
-              **Solution:** Established a rigorous, data-driven CRO framework including
-              continuous A/B testing, heat mapping, and user session recordings. We iterate
-              on designs based on real user behavior to consistently push conversion rates.
-            </p>
-          </div>
-          <div>
-            <h4>Challenge: Scalability Across Diverse Client Needs</h4>
-            <p>
-              **Solution:** Developed a modular component library and a flexible architecture
-              using Next.js and Headless CMS. This allows for rapid deployment of custom
-              solutions while maintaining brand consistency and efficiency.
-            </p>
-          </div>
-          <div>
-            <h4>Challenge: Staying Ahead in a Competitive Market</h4>
-            <p>
-              **Solution:** Continuous market research, skill development, and adoption of
-              emerging web technologies. We regularly analyze competitor strategies and
-              attend industry conferences to ensure our offerings remain cutting-edge.
-            </p>
+            <h4>Infrastructure</h4>
+            <p>Vercel, Cloudflare, Managed WordPress Hosting, AWS S3</p>
           </div>
         </div>
       )
     },
     {
-      id: 'agency-impact', // Renamed from 'results'
-      title: 'Our Impact & Achievements', // Renamed title
+      id: 'agency-impact',
+      title: 'Our Proven Impact',
       content: (
         <div className="flex flex-col gap-6">
           <div>
-            <h4>15+ Successful Client Engagements</h4>
+            <h4>Exponential Growth within 3 Months</h4>
             <p>
-              Built and launched highly effective websites for over 15 solar companies,
-              each tailored to their unique market and business objectives.
+              Our core promise is rapid results. Clients consistently see a significant, measurable increase in lead flow and market visibility within the first quarter of partnership.
             </p>
           </div>
           <div>
-            <h4>Avg. 60% Lead Conversion Increase</h4>
+            <h4>Dominant Local Search Rankings</h4>
             <p>
-              Clients consistently experience an average of 60% increase in qualified lead
-              conversions after partnering with King Solar Agency, demonstrating tangible ROI.
+              Through our expert SEO practices, we position our clients as the top solar providers in their target service areas, ensuring they are found by customers ready to buy.
             </p>
           </div>
           <div>
             <h4>5-Star Client Satisfaction</h4>
             <p>
-              Consistently receive top ratings and glowing testimonials from clients,
-              highlighting our professionalism, results-driven approach, and exceptional
-              customer service.
+              We pride ourselves on building strong partnerships, reflected in our excellent client feedback and the tangible ROI we deliver.
             </p>
           </div>
         </div>
