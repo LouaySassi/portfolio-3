@@ -38,7 +38,7 @@ export function Header() {
             LinkedIn
             <ExternalLink className="w-3 h-3" />
           </a>
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-xs sm:text-sm font-medium whitespace-nowrap text-[#f2f2f2]/80 hover:text-white transition-colors" style={{
+          <a href="/Louay CV PFE english (new).pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-xs sm:text-sm font-medium whitespace-nowrap text-[#f2f2f2]/80 hover:text-white transition-colors" style={{
           fontFamily: '"Neue Montreal", sans-serif'
         }}>
             Resume
