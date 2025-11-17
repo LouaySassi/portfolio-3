@@ -42,6 +42,14 @@ export function Projects() {
     logo: "/binomi logo.png", // No logo for this project
     gradientOverlay: 'radial-gradient(circle at 50% 0px, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0))'
   }, {
+    id: 'tracky',
+    title: 'Tracky',
+    company: 'Personal Project, 2024',
+    description: 'A local-first personal finance tracker that runs entirely on your computer with no internet required.',
+    image: '/tracky.png',
+    logo: '/tracky-logo.png',
+    gradientOverlay: 'radial-gradient(circle at 50% 0px, rgba(139, 157, 131, 0.3), rgba(0, 0, 0, 0) 80%), radial-gradient(circle at 50% 0px, rgba(139, 157, 131, 0.15), rgba(0, 0, 0, 0))'
+  },{
     id: 'king-solar',
     title: 'King Solar Agency',
     company: 'Founder, 2024-2025',
