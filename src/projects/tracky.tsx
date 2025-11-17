@@ -3,7 +3,7 @@ import { ProjectData } from './types';
 export const tracky: ProjectData = {
   title: 'Tracky',
   company: 'Personal Project',
-  year: '2024',
+  year: '2025',
   description: 'A local-first personal finance tracker that runs entirely on your computer with no internet required.',
   image: '/tracky.png',
   website: 'https://trackytn.netlify.app',
@@ -34,7 +34,7 @@ export const tracky: ProjectData = {
       title: 'Key Features',
       content: [
         {
-          title: '💾 100% Local & Private',
+          title: '100% Local & Private',
           description: 
             'All data is stored locally on your computer using SQLite. No internet connection required, ' +
             'no cloud services, no tracking. Your financial data never leaves your machine, ensuring ' +
@@ -42,7 +42,7 @@ export const tracky: ProjectData = {
           screenshots: ['/tracky-dashboard.png'],
         },
         {
-          title: '📊 Comprehensive Budget Tracking',
+          title: 'Comprehensive Budget Tracking',
           description: 
             'Track monthly bills, expenses, and remaining funds with an intuitive dashboard. Set up ' +
             'recurring expenses, monitor spending patterns, and get real-time insights into your financial ' +
