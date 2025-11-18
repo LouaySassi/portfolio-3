@@ -44,7 +44,7 @@ export function Projects() {
   }, {
     id: 'tracky',
     title: 'Tracky',
-    company: 'Personal Project, 2024',
+    company: 'Personal Project, 2025',
     description: 'A local-first personal finance tracker that runs entirely on your computer with no internet required.',
     image: '/tracky.png',
     logo: '/tracky-logo.png',
