@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { ArrowUpRight, Lock } from 'lucide-react';
+import { ArrowUpRight, Lock, Trophy } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { GlassmorphicHero } from '../components/GlassmorphicHero';
@@ -68,6 +68,132 @@ export function Projects() {
         secondaryText=".Net Developer at LineData"
         logoUrl={"/linedata.png"} 
       />
+
+      {/* Achievements Section */}
+      <motion.section
+        id="achievements"
+        className="flex flex-col gap-8"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
+        <div className="flex items-center gap-3">
+          <div
+            className="w-2 h-2 rounded-full bg-[#f2f2f2]"
+            style={{
+              boxShadow: '0 0 20px 2px rgba(242, 242, 242, 0.4), 0 0 40px 4px rgba(242, 242, 242, 0.2)',
+            }}
+          />
+          <span
+            className="text-sm font-medium uppercase tracking-[0.2em] text-[#f2f2f2]/60"
+            style={{ fontFamily: '"Neue Montreal", sans-serif' }}
+          >
+            Achievements
+          </span>
+        </div>
+
+        <div
+          className="p-2 rounded-3xl shadow-[0_40px_80px_0_rgba(0,0,0,0.5)] bg-[#f2f2f2]/[0.04]"
+          style={{
+            outlineColor: 'rgba(242, 242, 242, 0.05)',
+            outlineStyle: 'solid',
+            outlineWidth: '1px',
+            outlineOffset: '-1px',
+          }}
+        >
+          <div className="relative overflow-hidden rounded-2xl border border-[#3d3d3d] bg-gradient-to-br from-[#252525] to-[#101010] p-8 sm:p-10 flex flex-col gap-8">
+            <div
+              className="absolute top-0 left-0 right-0 h-px z-[1]"
+              style={{
+                backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0) 20%, rgb(255, 255, 255) 50%, rgba(0, 0, 0, 0) 80%)',
+              }}
+            />
+
+            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6">
+              <div className="flex flex-col gap-3">
+                <div className="flex items-center gap-4">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#f2f2f2]/10 border border-[#f2f2f2]/10">
+                    <Trophy className="w-6 h-6 text-[#f9bd4e]" />
+                  </div>
+                  <div>
+                    <h2
+                      className="text-3xl sm:text-4xl font-medium"
+                      style={{
+                        fontFamily: '"Neue Montreal", sans-serif',
+                        textShadow: 'rgba(255, 255, 255, 0.2) 0px -2px 10px',
+                      }}
+                    >
+                      DocKnock
+                    </h2>
+                    <p
+                      className="text-sm text-[#f2f2f2]/50 mt-1"
+                      style={{ fontFamily: '"Neue Montreal", sans-serif' }}
+                    >
+                      Healthcare SaaS &amp; AI Platform
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#f9bd4e]/30 bg-[#f9bd4e]/10 text-[#f9bd4e] text-sm font-medium whitespace-nowrap self-start"
+                style={{ fontFamily: '"Neue Montreal", sans-serif' }}
+              >
+                <Trophy className="w-4 h-4" />
+                1st Prize — MutualHack by MAE 2026
+              </div>
+            </div>
+
+            <div
+              className="flex flex-col gap-4 text-base leading-relaxed text-[#f2f2f2]/70"
+              style={{ fontFamily: '"Neue Montreal", sans-serif' }}
+            >
+              <p>
+                DocKnock is a healthcare platform that enables secure communication between medical
+                professionals and patients, streamlining consultations, document sharing, and
+                AI-assisted care coordination in one unified SaaS system.
+              </p>
+              <p>
+                As a core developer on Team Arsenal (Iyed Grassi, Louay Sassi, Leith Saddouri — ESPRIT),
+                I architected the full-stack application, built the secure messaging and document
+                workflows, and integrated AI features that power patient-doctor interactions.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div className="rounded-xl border border-[#f2f2f2]/10 bg-[#f2f2f2]/[0.03] p-4">
+                <p
+                  className="text-xs uppercase tracking-wider text-[#f2f2f2]/40 mb-2"
+                  style={{ fontFamily: '"Neue Montreal", sans-serif' }}
+                >
+                  Achievement
+                </p>
+                <p
+                  className="text-sm text-[#f2f2f2]/80"
+                  style={{ fontFamily: '"Neue Montreal", sans-serif' }}
+                >
+                  1st Prize, MutualHack by MAE 2026 — 10,000 TND, selected from 2,200+ applicants
+                  and 100 finalists.
+                </p>
+              </div>
+              <div className="rounded-xl border border-[#f2f2f2]/10 bg-[#f2f2f2]/[0.03] p-4">
+                <p
+                  className="text-xs uppercase tracking-wider text-[#f2f2f2]/40 mb-2"
+                  style={{ fontFamily: '"Neue Montreal", sans-serif' }}
+                >
+                  Team
+                </p>
+                <p
+                  className="text-sm text-[#f2f2f2]/80"
+                  style={{ fontFamily: '"Neue Montreal", sans-serif' }}
+                >
+                  Arsenal — Iyed Grassi, Louay Sassi, Leith Saddouri (ESPRIT)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </motion.section>
 
       {/* Projects Grid */}
       <div className="flex flex-col gap-8 sm:gap-12 relative" style={{
