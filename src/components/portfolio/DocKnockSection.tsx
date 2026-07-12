@@ -29,6 +29,13 @@ export function DocKnockSection() {
         </div>
 
         <div className="xl:col-span-4 flex flex-col justify-center gap-5">
+          <img
+            src={DOCKNOCK.logoWhite}
+            alt="DocKnock logo"
+            width={96}
+            height={96}
+            className="h-20 w-20 rounded-2xl object-cover"
+          />
           <p className="text-base md:text-lg leading-relaxed text-ink">{DOCKNOCK.summary}</p>
           <p className="text-sm md:text-base leading-relaxed text-ink-soft">{DOCKNOCK.role}</p>
           <div className="flex flex-wrap gap-4 pt-1">

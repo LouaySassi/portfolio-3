@@ -30,6 +30,8 @@ export const DOCKNOCK = {
     'Healthcare platform connecting patients with nearby professionals through secure communication and care workflows.',
   role:
     'Led product planning, technical delivery, and the final pitch. Now growing through incubation with MAZAM.',
+  logoWhite: '/docknock-white.png',
+  logoBlue: '/docknock-blue.png',
   teamPhoto: '/louay-sassi-team-arsenal-mutualhack-mae-2026-first-prize.jpg',
   teamCaption: 'Team Arsenal · MutualHack 3.0 by MAE',
   interviewPoster: '/1dc51c20-d842-4120-9013-32b8d793ab00.png',
@@ -71,7 +73,7 @@ export const PROJECTS: PortfolioProject[] = [
     problem: 'Patients and nearby healthcare professionals lack a direct, secure digital path.',
     ownership: 'Led product planning, architecture, delivery, and pitch.',
     image: '/louay-sassi-team-arsenal-mutualhack-mae-2026-first-prize.jpg',
-    logo: '/docai-logo.svg',
+    logo: DOCKNOCK.logoBlue,
     link: DOCKNOCK.links.louayPost,
   },
   {

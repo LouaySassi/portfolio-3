@@ -41,7 +41,7 @@ export function WorkSection() {
                       alt=""
                       width={36}
                       height={36}
-                      className="h-9 w-9 rounded-md object-contain"
+                      className="h-9 w-9 rounded-md object-cover bg-white"
                       aria-hidden
                     />
                   ) : null}
