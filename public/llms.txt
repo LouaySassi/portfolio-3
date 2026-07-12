@@ -1,25 +1,24 @@
 # Louay Sassi — Portfolio
 
-> Entrepreneurial product builder and Software Developer at Linedata. Founder of King Solar Agency. MutualHack by MAE 2026 first-prize winner with DocKnock.
+> Software engineer and product builder at Linedata. Founder of King Solar Agency (2024–2025). Built DocKnock, MutualHack 3.0 by MAE first-prize product, now incubated with MAZAM.
 
 Canonical URL: https://louaysassi.netlify.app/
 
 ## Sections
 
-- Identity: https://louaysassi.netlify.app/#identity
-- Philosophy: https://louaysassi.netlify.app/#philosophy
-- Recognition (MutualHack / DocKnock): https://louaysassi.netlify.app/#recognition
+- About: https://louaysassi.netlify.app/#about
+- DocKnock: https://louaysassi.netlify.app/#docknock
 - Selected work: https://louaysassi.netlify.app/#work
-- Career journey: https://louaysassi.netlify.app/#journey
-- Capabilities: https://louaysassi.netlify.app/#capabilities
+- Experience: https://louaysassi.netlify.app/#experience
 - Contact: https://louaysassi.netlify.app/#contact
 
 ## Key facts
 
 - Name: Louay Sassi (Louay Cheker Sassi)
-- Role: Software Developer @ Linedata
+- Role: Software Engineer · Product Development
 - Location: Tunisia
-- Award: 1st Prize, MutualHack by MAE 2026 (Team Arsenal, DocKnock)
+- Current: Linedata
+- Product: DocKnock (MutualHack 3.0 by MAE · 1st Prize · 2026 · MAZAM incubation)
 - LinkedIn: https://www.linkedin.com/in/louaysassi
 - GitHub: https://github.com/LouaySassi
 
@@ -27,3 +26,4 @@ Canonical URL: https://louaysassi.netlify.app/
 
 - ESB coverage: https://www.esb.tn/1er-prix-mutualhack-by-mae-2026/
 - Express FM interview: https://www.linkedin.com/posts/efmabrplateauspaezcialabrmutualhack-ugcPost-7464688001516806144-G430/
+- Facebook interview: https://www.facebook.com/share/v/1BWVGNszzm/
