@@ -1,0 +1,28 @@
+# Louay Sassi
+
+> Software Developer at Linedata · 1st Prize winner of MutualHack by MAE 2026 · Builder of DocKnock (healthcare SaaS & AI)
+
+## Who
+
+Louay Sassi is a Software Developer based in Tunisia, currently working at Linedata. He builds SaaS and AI systems, with experience across .NET, React, Spring Boot, and healthcare technology.
+
+## Notable achievement
+
+In May 2026, Louay Sassi and Team Arsenal (Iyed Grassi, Louay Sassi, Leith Saddouri — ESPRIT) won 1st prize at MutualHack by MAE Assurances for DocKnock, a healthcare platform enabling secure communication between medical professionals and patients. Prize: 10,000 TND. Competition: 2,200+ applicants, ~100 finalists.
+
+## Projects
+
+- DocKnock — MutualHack 2026 winning healthcare SaaS (Team Arsenal)
+- DocAI — AI-powered patient management (BestWay IT)
+- Binomi — roommate matching platform
+- Tracky — local-first personal finance tracker
+- King Solar Agency — lead-gen websites for U.S. solar companies
+
+## Links
+
+- Portfolio: https://louaysassi.netlify.app/
+- LinkedIn: https://www.linkedin.com/in/louaysassi
+- GitHub: https://github.com/LouaySassi
+- ESB coverage: https://www.esb.tn/1er-prix-mutualhack-by-mae-2026/
+- Express FM interview (LinkedIn): https://www.linkedin.com/posts/efmabrplateauspaezcialabrmutualhack-ugcPost-7464688001516806144-G430/
+- Louay's MutualHack post: https://www.linkedin.com/posts/louaysassi_docknock-mutualhack-maeassurances-ugcPost-7464304487688654849-eGTO/

@@ -117,8 +117,12 @@ export function AboutMe() {
                 }}
               />
               <img
-                src="/profile.png" // Ensure this is also correctly pointing to your public folder
-                alt="Louay Cheker Sassi"
+                src="/profile.png"
+                alt="Louay Sassi — Software Developer at Linedata"
+                width={256}
+                height={256}
+                loading="lazy"
+                decoding="async"
                 className="relative w-64 h-64 rounded-2xl object-cover border border-[#f2f2f2]/10"
                 style={{
                   boxShadow: '0 20px 60px 0 rgba(0, 0, 0, 0.4)',
@@ -139,10 +143,16 @@ export function AboutMe() {
               style={{ fontFamily: '"Neue Montreal", sans-serif' }}
             >
               <p>
-                Hi, I'm Louay Cheker Sassi, a Full-Stack Developer with a passion for building
+                Hi, I'm Louay Sassi, a Full-Stack Developer with a passion for building
                 intelligent systems that solve real-world problems. Currently working as a
                 C# .NET Developer at Linedata, I specialize in creating enterprise-grade
                 financial software solutions.
+              </p>
+              <p>
+                In May 2026, I won 1st prize at MutualHack by MAE Assurances with Team Arsenal
+                for DocKnock — a healthcare SaaS platform for secure doctor–patient communication.
+                That win (10,000 TND, out of 2,200+ applicants) reinforced what I care about most:
+                shipping AI-powered products that create real impact.
               </p>
               <p>
                 My journey in tech has been driven by curiosity and a desire to push
