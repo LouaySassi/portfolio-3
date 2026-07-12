@@ -7,34 +7,25 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        canvas: '#FFF8F1',
-        surface: '#FFFFFF',
-        ink: '#111111',
-        'ink-soft': '#3D3D3D',
-        'ink-muted': '#6B6B6B',
-        line: '#E8E0D6',
+        canvas: '#0A0A0A',
+        surface: '#111111',
+        elevated: '#1A1A1A',
+        ink: '#F5F5F5',
+        'ink-soft': '#A3A3A3',
+        'ink-muted': '#737373',
+        line: 'rgba(255,255,255,0.08)',
         accent: {
-          DEFAULT: '#2563EB',
-          strong: '#1D4ED8',
+          DEFAULT: '#3B82F6',
+          strong: '#2563EB',
         },
       },
       fontFamily: {
-        sans: ['Archivo', ...defaultTheme.fontFamily.sans],
-        display: ['"Space Grotesk"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Helvetica Neue"', 'Helvetica', 'Arial', ...defaultTheme.fontFamily.sans],
+        display: ['"Helvetica Neue"', 'Helvetica', 'Arial', ...defaultTheme.fontFamily.sans],
       },
       maxWidth: {
-        editorial: '72rem',
+        shell: '96rem',
       },
-      typography: ({ theme }) => ({
-        DEFAULT: {
-          css: {
-            '--tw-prose-body': theme('colors.ink-soft'),
-            '--tw-prose-headings': theme('colors.ink'),
-            '--tw-prose-links': theme('colors.accent.DEFAULT'),
-            maxWidth: 'none',
-          },
-        },
-      }),
     },
   },
   plugins: [typography],

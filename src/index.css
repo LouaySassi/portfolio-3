@@ -1,8 +1,6 @@
-/* PLEASE NOTE: THESE TAILWIND IMPORTS SHOULD NEVER BE DELETED */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-/* DO NOT DELETE THESE TAILWIND IMPORTS, OTHERWISE THE STYLING WILL NOT RENDER AT ALL */
 
 @layer base {
   html {
@@ -13,7 +11,7 @@
     @apply bg-canvas text-ink antialiased;
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
-    font-family: 'Archivo', system-ui, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   :focus-visible {
@@ -28,7 +26,7 @@
   }
 
   .btn-secondary {
-    @apply inline-flex items-center gap-2 rounded-full border border-line bg-surface px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-ink-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-canvas;
+    @apply inline-flex items-center gap-2 rounded-full border border-line bg-transparent px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:bg-elevated focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-canvas;
   }
 }
 
