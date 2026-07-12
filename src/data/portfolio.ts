@@ -1,66 +1,50 @@
 export const SITE = {
   name: 'Louay Sassi',
-  role: 'Software Developer @ Linedata',
-  tagline: 'Product builder turning ideas into shipped SaaS & AI systems.',
-  positioning:
-    'I build and lead software products — from enterprise systems at Linedata to ventures like King Solar Agency and DocKnock. I care about product thinking, project ownership, and getting things into users’ hands.',
+  role: 'Software Engineer · Product Development',
   email: 'louaychekersassi@gmail.com',
   linkedin: 'https://www.linkedin.com/in/louaysassi',
   github: 'https://github.com/LouaySassi',
   resume: '/Louay_Cheker_Sassi_CV english 9-7-2026.pdf',
   domain: 'https://louaysassi.netlify.app',
+  heroImage: '/1dc51c20-d842-4120-9013-32b8d793ab00.png',
 } as const;
 
 export const NAV_ITEMS = [
-  { id: 'identity', label: 'About' },
-  { id: 'philosophy', label: 'Philosophy' },
-  { id: 'recognition', label: 'Recognition' },
+  { id: 'about', label: 'About' },
+  { id: 'docknock', label: 'DocKnock' },
   { id: 'work', label: 'Work' },
-  { id: 'journey', label: 'Journey' },
-  { id: 'capabilities', label: 'Capabilities' },
+  { id: 'experience', label: 'Experience' },
   { id: 'contact', label: 'Contact' },
 ] as const;
 
-export const CREDIBILITY_CHIPS = [
-  'Software Developer @ Linedata',
-  'Founder, King Solar Agency',
-  'MutualHack 2026 — 1st Prize',
-] as const;
-
-export const PHILOSOPHY = {
-  title: 'How I work',
-  paragraphs: [
-    'I am moving toward entrepreneurship and product leadership — not just writing code, but framing problems, aligning stakeholders, and shipping systems people actually use.',
-    'At Linedata I deliver enterprise-grade financial software. Outside work I have founded ventures, led hackathon teams, and built SaaS products end to end — from discovery and architecture through launch.',
-    'What matters to me: clarity of purpose, fast iteration, and ownership. I want to build products that earn trust, not just demos.',
-  ],
-  principles: [
-    { label: 'Product framing', detail: 'Define the problem, user, and success metric before building.' },
-    { label: 'Technical delivery', detail: 'Full-stack execution across .NET, React, Spring Boot, and AI integrations.' },
-    { label: 'Project leadership', detail: 'Coordinate teams, scope work, and keep momentum toward launch.' },
-  ],
+export const BIO = {
+  lead: 'I build digital products with precision, creativity, and ownership.',
+  body:
+    'At Linedata I work on enterprise trading software. Beyond that I have founded and scaled a web agency, and led DocKnock through product planning, technical delivery, pitching, and incubation with MAZAM.',
 } as const;
 
-export const RECOGNITION = {
-  title: 'MutualHack by MAE 2026',
-  subtitle: '1st Prize — Team Arsenal · DocKnock',
+export const DOCKNOCK = {
+  title: 'DocKnock',
+  meta: 'MutualHack 3.0 by MAE · 1st Prize · 2026',
   summary:
-    'Louay Sassi and Team Arsenal (Iyed Grassi, Louay Sassi, Leith Saddouri — ESPRIT) won 1st prize at MutualHack by MAE 2026 with DocKnock, a healthcare SaaS platform for secure communication between medical professionals and patients. Selected from 2,200+ applicants and 100 finalists. Prize: 10,000 TND.',
-  role: 'Core full-stack developer — architecture, secure messaging and document workflows, and AI-assisted patient–doctor interactions.',
+    'Healthcare platform connecting patients with nearby professionals through secure communication and care workflows.',
+  role:
+    'Led product planning, technical delivery, and the final pitch. Now growing through incubation with MAZAM.',
   teamPhoto: '/louay-sassi-team-arsenal-mutualhack-mae-2026-first-prize.jpg',
-  interviewPhoto: '/louay-sassi-express-fm-interview-mutualhack-2026.jpg',
+  teamCaption: 'Team Arsenal · MutualHack 3.0 by MAE',
+  interviewPoster: '/1dc51c20-d842-4120-9013-32b8d793ab00.png',
   links: {
     esb: 'https://www.esb.tn/1er-prix-mutualhack-by-mae-2026/',
     expressFm:
       'https://www.linkedin.com/posts/efmabrplateauspaezcialabrmutualhack-ugcPost-7464688001516806144-G430/',
+    facebook: 'https://www.facebook.com/share/v/1BWVGNszzm/',
     louayPost:
       'https://www.linkedin.com/posts/louaysassi_docknock-mutualhack-maeassurances-ugcPost-7464304487688654849-eGTO/',
   },
   linkedInEmbed: {
     postUrn: '7464688001516806144',
-    title: 'Express FM — Plateau Spécial MutualHack',
-    description:
-      'Official Express FM interview featuring Team Arsenal after winning MutualHack by MAE 2026.',
+    title: 'Express FM interview',
+    description: 'Watch the Express FM Plateau Spécial interview.',
   },
 } as const;
 
@@ -68,101 +52,88 @@ export interface PortfolioProject {
   id: string;
   title: string;
   context: string;
+  outcome: string;
   problem: string;
   ownership: string;
-  outcome: string;
   image: string;
   logo?: string;
-  tags: string[];
   link?: string;
 }
 
 export const PROJECTS: PortfolioProject[] = [
   {
-    id: 'king-solar',
-    title: 'King Solar Agency',
-    context: 'Founder · 2024–2025',
-    problem:
-      'U.S. solar companies needed high-converting lead-generation websites but lacked fast, reliable digital partners.',
-    ownership:
-      'Founded the agency, managed client delivery, and built full-stack marketing sites with SEO and conversion optimization.',
-    outcome:
-      'Scaled a client base with 100% satisfaction, 60% faster page loads, and measurable lead-gen improvements.',
-    image: '/king solar.png',
-    logo: '/king-solar-agency.png',
-    tags: ['Entrepreneurship', 'Lead gen', 'Full-stack'],
-  },
-  {
     id: 'docknock',
     title: 'DocKnock',
-    context: 'MutualHack Winner · 2026',
-    problem:
-      'Healthcare communication between doctors, clinics, and patients is fragmented and insecure.',
-    ownership:
-      'Co-built the platform architecture, secure messaging layer, document workflows, and AI-assisted care coordination.',
-    outcome:
-      '1st prize at MutualHack by MAE 2026 (10,000 TND) out of 2,200+ applicants.',
+    context: 'Product · 2026',
+    outcome: 'Shipped and pitched a healthcare product now in MAZAM incubation.',
+    problem: 'Patients and nearby healthcare professionals lack a direct, secure digital path.',
+    ownership: 'Led product planning, architecture, delivery, and pitch.',
     image: '/louay-sassi-team-arsenal-mutualhack-mae-2026-first-prize.jpg',
     logo: '/docai-logo.svg',
-    tags: ['SaaS', 'Healthcare', 'AI'],
-    link: RECOGNITION.links.louayPost,
+    link: DOCKNOCK.links.louayPost,
   },
   {
-    id: 'binomi',
-    title: 'Binomi',
-    context: 'Personal project · 2024',
-    problem:
-      'University students struggle to find compatible roommates through fragmented, low-trust channels.',
-    ownership:
-      'Designed and built a swipe-based matching platform with lifestyle filters, profiles, and in-app messaging.',
-    outcome:
-      'Shipped a student-focused product featured across university communities with a clear product loop.',
-    image: '/binomi.png',
-    logo: '/binomi logo.png',
-    tags: ['Consumer', 'Matching', 'Mobile-first'],
-    link: 'https://binomi.netlify.app',
+    id: 'docai',
+    title: 'DocAI',
+    context: 'BestWay IT · 2025',
+    outcome: 'Reduced manual clinical workloads by 30% with AI triage and FileNet.',
+    problem: 'Clinics lacked a unified digital experience for appointments and records.',
+    ownership: 'Built the full-stack platform with AI triage and IBM FileNet.',
+    image: '/docai.png',
+    logo: '/docai-logo.svg',
+    link: 'https://docaitn.netlify.app',
   },
   {
     id: 'tracky',
     title: 'Tracky',
-    context: 'Personal project · 2025',
-    problem: 'Personal finance tools often require cloud accounts and compromise privacy.',
-    ownership: 'Designed and built a local-first finance tracker that runs entirely on-device.',
-    outcome: 'Shipped a privacy-first desktop experience with analytics and budgeting workflows.',
+    context: 'Personal · 2025',
+    outcome: 'Shipped a local-first finance tracker that keeps data on-device.',
+    problem: 'Personal finance tools often force cloud accounts and weak privacy.',
+    ownership: 'Designed and built the desktop product end to end.',
     image: '/tracky.png',
     logo: '/tracky-logo.png',
-    tags: ['Local-first', 'Product design', 'Desktop'],
     link: 'https://trackytn.netlify.app',
+  },
+  {
+    id: 'binomi',
+    title: 'Binomi',
+    context: 'Personal · 2024',
+    outcome: 'Shipped a roommate-matching product with a clear swipe-to-match loop.',
+    problem: 'Students struggle to find compatible roommates through fragmented channels.',
+    ownership: 'Designed and built matching, profiles, and messaging.',
+    image: '/binomi.png',
+    logo: '/binomi logo.png',
+    link: 'https://binomi.netlify.app',
   },
 ];
 
-export const JOURNEY = [
+export const EXPERIENCE = [
   {
     period: 'Nov 2025 – Present',
-    role: 'C# .NET Developer',
+    role: 'Software Engineer',
     org: 'Linedata',
-    detail: 'Enterprise financial software in a regulated environment.',
+    detail: 'Building portfolio management features for enterprise trading clients.',
     logo: '/linedata.png',
   },
   {
     period: 'Aug 2024 – Jun 2025',
     role: 'Founder & Full-Stack Developer',
     org: 'King Solar Agency',
-    detail: 'Built and scaled a U.S. solar lead-gen agency from zero.',
+    detail: 'Past venture — founded and scaled lead-gen sites for the U.S. solar market.',
     logo: '/king-solar-agency.png',
   },
   {
     period: 'Feb 2025 – Jun 2025',
     role: 'Final Year Project Intern',
     org: 'BestWay IT',
-    detail: 'DocAI — AI-powered healthcare platform with IBM FileNet.',
+    detail: 'Built DocAI — AI patient management with IBM FileNet.',
     logo: '/bestway-it.png',
   },
   {
     period: 'Sep 2023 – May 2024',
     role: 'Web Developer',
     org: 'SWD Agency',
-    detail: 'Delivered 6+ client platforms and backend customizations.',
+    detail: 'Delivered 6+ client platforms and production fixes.',
     logo: '/swd-agency.png',
   },
 ] as const;
@@ -182,29 +153,11 @@ export const EDUCATION = [
   },
 ] as const;
 
-export const CAPABILITIES = [
-  {
-    title: 'Product thinking',
-    items: ['Problem framing', 'User journeys', 'MVP scoping', 'Outcome metrics'],
-  },
-  {
-    title: 'Project leadership',
-    items: ['Team coordination', 'Stakeholder alignment', 'Delivery planning', 'Agile execution'],
-  },
-  {
-    title: 'Technical delivery',
-    items: ['C# / .NET', 'React & TypeScript', 'Spring Boot', 'PostgreSQL', 'AI integrations'],
-  },
-  {
-    title: 'Entrepreneurship',
-    items: ['Venture building', 'Client delivery', 'Go-to-market sites', 'Startup experiments'],
-  },
-] as const;
-
 export const LEGACY_HASH_MAP: Record<string, string> = {
-  '/about': 'philosophy',
-  '/project/docai': 'work-docknock',
+  '/about': 'about',
+  '/project/docai': 'work-docai',
   '/project/binomi': 'work-binomi',
   '/project/tracky': 'work-tracky',
-  '/project/king-solar': 'work-king-solar',
+  '/project/king-solar': 'experience',
+  '/project/docknock': 'docknock',
 };
