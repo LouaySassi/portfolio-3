@@ -35,6 +35,8 @@ export const DOCKNOCK = {
   interviewPoster: '/1dc51c20-d842-4120-9013-32b8d793ab00.png',
   links: {
     esb: 'https://www.esb.tn/1er-prix-mutualhack-by-mae-2026/',
+    managers:
+      'https://managers.tn/2026/06/08/mae-mutual-hack-linnovation-au-service-de-lhumain/',
     expressFm:
       'https://www.linkedin.com/posts/efmabrplateauspaezcialabrmutualhack-ugcPost-7464688001516806144-G430/',
     facebook: 'https://www.facebook.com/share/v/1BWVGNszzm/',

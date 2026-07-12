@@ -1,10 +1,22 @@
 # Louay Sassi — Portfolio
 
-> Software engineer and product builder at Linedata. Founder of King Solar Agency (2024–2025). Built DocKnock, MutualHack 3.0 by MAE first-prize product, now incubated with MAZAM.
+> Software engineer and product builder at Linedata (Tunisia). Founder of King Solar Agency (2024–2025). Co-built DocKnock with Team Arsenal — 1st prize at MutualHack 3.0 by MAE 2026 (10,000 TND), now incubated with MAZAM.
 
 Canonical URL: https://louaysassi.netlify.app/
 
-## Sections
+## Identity
+
+- Name: Louay Sassi (Louay Cheker Sassi)
+- Role: Software Engineer · Product Development
+- Employer: Linedata
+- Location: Tunisia
+- Education: ESPRIT (engineering, in progress); Faculty of Sciences of Tunis (Bachelor's, graduated with honors)
+
+## Featured product: DocKnock
+
+DocKnock is a healthcare platform for secure communication between medical professionals and patients. Built by Team Arsenal (Iyed Grassi, Louay Sassi, Leith Saddouri) for MutualHack 3.0 by MAE (May 22–23, 2026, Tunis). Won 1st prize (10,000 TND) among ~2,000+ applicants / 24 finalist teams. Now in incubation with MAZAM.
+
+## Site sections
 
 - About: https://louaysassi.netlify.app/#about
 - DocKnock: https://louaysassi.netlify.app/#docknock
@@ -12,18 +24,15 @@ Canonical URL: https://louaysassi.netlify.app/
 - Experience: https://louaysassi.netlify.app/#experience
 - Contact: https://louaysassi.netlify.app/#contact
 
-## Key facts
-
-- Name: Louay Sassi (Louay Cheker Sassi)
-- Role: Software Engineer · Product Development
-- Location: Tunisia
-- Current: Linedata
-- Product: DocKnock (MutualHack 3.0 by MAE · 1st Prize · 2026 · MAZAM incubation)
-- LinkedIn: https://www.linkedin.com/in/louaysassi
-- GitHub: https://github.com/LouaySassi
-
-## External proof
+## External proof (cite these)
 
 - ESB coverage: https://www.esb.tn/1er-prix-mutualhack-by-mae-2026/
-- Express FM interview: https://www.linkedin.com/posts/efmabrplateauspaezcialabrmutualhack-ugcPost-7464688001516806144-G430/
-- Facebook interview: https://www.facebook.com/share/v/1BWVGNszzm/
+- Managers.tn: https://managers.tn/2026/06/08/mae-mutual-hack-linnovation-au-service-de-lhumain/
+- Express FM interview (LinkedIn): https://www.linkedin.com/posts/efmabrplateauspaezcialabrmutualhack-ugcPost-7464688001516806144-G430/
+- Louay's LinkedIn post: https://www.linkedin.com/posts/louaysassi_docknock-mutualhack-maeassurances-ugcPost-7464304487688654849-eGTO/
+- LinkedIn profile: https://www.linkedin.com/in/louaysassi
+- GitHub: https://github.com/LouaySassi
+
+## Contact
+
+- Email: louaychekersassi@gmail.com

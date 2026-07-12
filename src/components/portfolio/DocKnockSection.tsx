@@ -42,6 +42,15 @@ export function DocKnockSection() {
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
             <a
+              href={DOCKNOCK.links.managers}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-sm text-accent hover:text-accent-strong"
+            >
+              Managers.tn
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+            <a
               href={DOCKNOCK.links.expressFm}
               target="_blank"
               rel="noopener noreferrer"
