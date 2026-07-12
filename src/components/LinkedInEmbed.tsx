@@ -55,7 +55,7 @@ export function LinkedInEmbed({
 
   return (
     <div ref={containerRef} className="flex flex-col gap-4 h-full">
-      <div className="relative overflow-hidden rounded-2xl border border-[#3d3d3d] bg-[#151515] aspect-[4/5] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[420px]">
+      <div className="relative overflow-hidden rounded-2xl border border-line bg-surface aspect-[4/5] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[420px]">
         <img
           src={posterSrc}
           alt={posterAlt}
@@ -72,7 +72,7 @@ export function LinkedInEmbed({
           <iframe
             title={title}
             src={embedSrc}
-            className="absolute inset-0 w-full h-full border-0 bg-[#101010]"
+            className="absolute inset-0 w-full h-full border-0 bg-surface"
             allowFullScreen
             loading="lazy"
           />
@@ -83,13 +83,10 @@ export function LinkedInEmbed({
             className="absolute inset-0 flex flex-col items-center justify-center gap-4 cursor-pointer group"
             aria-label={`Play or open: ${title}`}
           >
-            <span className="flex items-center justify-center w-16 h-16 rounded-full bg-[#f2f2f2] text-[#101010] shadow-[0_0_40px_rgba(242,242,242,0.35)] group-hover:scale-105 transition-transform duration-200">
+            <span className="flex items-center justify-center w-16 h-16 rounded-full bg-ink text-canvas shadow-lg group-hover:scale-105 transition-transform duration-200">
               <Play className="w-7 h-7 ml-0.5" fill="currentColor" />
             </span>
-            <span
-              className="inline-flex items-center gap-2 text-sm text-[#f2f2f2]/85 bg-[#101010]/55 backdrop-blur-md border border-[#f2f2f2]/15 px-3 py-1.5 rounded-full"
-              style={{ fontFamily: '"Neue Montreal", sans-serif' }}
-            >
+            <span className="inline-flex items-center gap-2 text-sm text-ink bg-canvas/90 border border-line px-3 py-1.5 rounded-full">
               <VolumeX className="w-3.5 h-3.5" />
               Watch Express FM interview
             </span>
@@ -98,24 +95,13 @@ export function LinkedInEmbed({
       </div>
 
       <div className="flex flex-col gap-2">
-        <h3
-          className="text-lg font-medium text-[#f2f2f2]"
-          style={{ fontFamily: '"Neue Montreal", sans-serif' }}
-        >
-          {title}
-        </h3>
-        <p
-          className="text-sm text-[#f2f2f2]/60 leading-relaxed"
-          style={{ fontFamily: '"Neue Montreal", sans-serif' }}
-        >
-          {description}
-        </p>
+        <h3 className="font-display text-lg font-semibold text-ink">{title}</h3>
+        <p className="text-sm text-ink-soft leading-relaxed">{description}</p>
         <a
           href={linkedInUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 text-sm text-[#f2f2f2]/80 hover:text-white transition-colors w-fit cursor-pointer"
-          style={{ fontFamily: '"Neue Montreal", sans-serif' }}
+          className="inline-flex items-center gap-1.5 text-sm text-accent hover:text-accent-strong transition-colors w-fit"
         >
           Open on LinkedIn
           <ExternalLink className="w-3.5 h-3.5" />
