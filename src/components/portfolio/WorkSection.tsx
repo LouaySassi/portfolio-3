@@ -9,102 +9,90 @@ export function WorkSection() {
   return (
     <SectionShell
       id="work"
-      eyebrow="Selected work"
-      title="Impact stories"
-      description="Problem → ownership → outcome. Curated ventures and products, not a screenshot gallery."
+      eyebrow="Work"
+      title="Selected products"
     >
-      <div className="flex flex-col gap-8 md:gap-10">
+      <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
         {PROJECTS.map((project) => {
           const isExpanded = expandedId === project.id;
+          const detailsId = `work-${project.id}-details`;
 
           return (
             <article
               key={project.id}
               id={`work-${project.id}`}
-              className="scroll-mt-32 rounded-2xl border border-line bg-surface overflow-hidden"
+              className="scroll-mt-32 overflow-hidden rounded-2xl border border-line bg-surface"
             >
-              <div className="grid grid-cols-1 lg:grid-cols-12">
-                <div className="lg:col-span-5 relative min-h-[220px] lg:min-h-[320px]">
-                  <img
-                    src={project.image}
-                    alt={`${project.title} project visual`}
-                    width={800}
-                    height={600}
-                    loading="lazy"
-                    decoding="async"
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
+              <img
+                src={project.image}
+                alt={`${project.title} project visual`}
+                width={900}
+                height={560}
+                loading="lazy"
+                decoding="async"
+                className="h-56 w-full object-cover sm:h-64"
+              />
+
+              <div className="flex flex-col gap-5 p-5 sm:p-6">
+                <div className="flex items-start gap-3">
+                  {project.logo ? (
+                    <img
+                      src={project.logo}
+                      alt=""
+                      width={36}
+                      height={36}
+                      className="h-9 w-9 rounded-md object-contain"
+                      aria-hidden
+                    />
+                  ) : null}
+                  <div className="min-w-0">
+                    <h3 className="text-xl font-semibold tracking-tight text-ink">{project.title}</h3>
+                    <p className="mt-1 text-sm text-ink-muted">{project.context}</p>
+                  </div>
                 </div>
 
-                <div className="lg:col-span-7 p-6 md:p-8 flex flex-col gap-5">
-                  <div className="flex flex-wrap items-center gap-3">
-                    {project.logo ? (
-                      <img
-                        src={project.logo}
-                        alt=""
-                        width={32}
-                        height={32}
-                        className="w-8 h-8 rounded-md object-contain"
-                        aria-hidden
-                      />
-                    ) : null}
-                    <div>
-                      <h3 className="font-display text-2xl font-semibold text-ink">{project.title}</h3>
-                      <p className="text-sm text-ink-muted">{project.context}</p>
-                    </div>
-                  </div>
+                <div className="space-y-3">
+                  <p className="text-xs font-medium uppercase tracking-[0.18em] text-ink-muted">Outcome</p>
+                  <p className="text-sm leading-relaxed text-ink-soft">{project.outcome}</p>
+                </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+                {isExpanded ? (
+                  <div id={detailsId} className="grid gap-4 rounded-xl bg-elevated p-4 text-sm sm:grid-cols-2">
                     <div>
-                      <p className="text-xs uppercase tracking-[0.18em] text-ink-muted mb-1.5">Problem</p>
+                      <p className="mb-1.5 text-xs font-medium uppercase tracking-[0.18em] text-ink-muted">
+                        Problem
+                      </p>
                       <p className="leading-relaxed text-ink-soft">{project.problem}</p>
                     </div>
                     <div>
-                      <p className="text-xs uppercase tracking-[0.18em] text-ink-muted mb-1.5">Ownership</p>
+                      <p className="mb-1.5 text-xs font-medium uppercase tracking-[0.18em] text-ink-muted">
+                        Ownership
+                      </p>
                       <p className="leading-relaxed text-ink-soft">{project.ownership}</p>
                     </div>
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.18em] text-ink-muted mb-1.5">Outcome</p>
-                      <p className="leading-relaxed text-ink-soft">{project.outcome}</p>
-                    </div>
                   </div>
+                ) : null}
 
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="rounded-full border border-line px-3 py-1 text-xs text-ink-muted"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-
-                  <div className="flex flex-wrap items-center gap-4 pt-1">
-                    {project.link ? (
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-accent-strong transition-colors"
-                      >
-                        View proof
-                        <ExternalLink className="w-3.5 h-3.5" />
-                      </a>
-                    ) : null}
-                    <button
-                      type="button"
-                      onClick={() => setExpandedId(isExpanded ? null : project.id)}
-                      className="text-sm text-ink-muted hover:text-ink transition-colors"
+                <div className="flex flex-wrap items-center gap-3">
+                  <button
+                    type="button"
+                    aria-expanded={isExpanded}
+                    aria-controls={detailsId}
+                    onClick={() => setExpandedId(isExpanded ? null : project.id)}
+                    className="btn-secondary px-4 py-2"
+                  >
+                    {isExpanded ? 'Hide details' : 'Details'}
+                  </button>
+                  {project.link ? (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors hover:text-accent-strong"
                     >
-                      {isExpanded ? 'Hide details' : 'More context'}
-                    </button>
-                  </div>
-
-                  {isExpanded ? (
-                    <p className="text-sm leading-relaxed text-ink-soft border-t border-line pt-4">
-                      {project.ownership} {project.outcome}
-                    </p>
+                      Open
+                      <ExternalLink className="h-3.5 w-3.5" />
+                    </a>
                   ) : null}
                 </div>
               </div>

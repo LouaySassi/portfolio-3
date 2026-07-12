@@ -1,22 +1,18 @@
-import { CapabilitiesSection } from '../components/portfolio/CapabilitiesSection';
 import { ContactSection } from '../components/portfolio/ContactSection';
+import { DocKnockSection } from '../components/portfolio/DocKnockSection';
 import { IdentityHero } from '../components/portfolio/IdentityHero';
 import { JourneySection } from '../components/portfolio/JourneySection';
-import { PhilosophySection } from '../components/portfolio/PhilosophySection';
-import { RecognitionSection } from '../components/portfolio/RecognitionSection';
 import { WorkSection } from '../components/portfolio/WorkSection';
 import { LegacyHashRedirect } from '../components/LegacyHashRedirect';
 
 export function PortfolioPage() {
   return (
-    <main className="w-full max-w-editorial px-4 sm:px-6 md:px-8">
+    <main className="w-full max-w-shell px-5 sm:px-8 lg:px-10">
       <LegacyHashRedirect />
       <IdentityHero />
-      <PhilosophySection />
-      <RecognitionSection />
+      <DocKnockSection />
       <WorkSection />
       <JourneySection />
-      <CapabilitiesSection />
       <ContactSection />
     </main>
   );
