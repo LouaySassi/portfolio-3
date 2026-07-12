@@ -10,14 +10,13 @@ interface LinkedInEmbedProps {
   title: string;
   description: string;
   linkedInUrl: string;
-  /** Prefer loading the live embed when scrolled into view */
+  /** Load the live embed when scrolled into view (default: click-to-play) */
   autoLoadOnView?: boolean;
 }
 
 /**
  * LinkedIn does not allow parent pages to mute-autoplay their video embeds.
- * Best available UX: load the official embed when visible, keep a strong poster,
- * and surface a clear watch CTA that opens the original post.
+ * Default UX: poster + play button; embed loads only on click.
  */
 export function LinkedInEmbed({
   postUrn,
@@ -26,7 +25,7 @@ export function LinkedInEmbed({
   title,
   description,
   linkedInUrl,
-  autoLoadOnView = true,
+  autoLoadOnView = false,
 }: LinkedInEmbedProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [inView, setInView] = useState(false);
