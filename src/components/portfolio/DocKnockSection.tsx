@@ -15,8 +15,8 @@ export function DocKnockSection() {
         </p>
       }
     >
-      <div className="grid grid-cols-1 gap-8 xl:grid-cols-12 xl:items-stretch xl:gap-10">
-        <div className="flex xl:col-span-8 xl:min-h-0">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-stretch lg:gap-8 xl:gap-10">
+        <div className="flex min-w-0 lg:col-span-7 lg:min-h-0 xl:col-span-8">
           <LinkedInEmbed
             postUrn={DOCKNOCK.linkedInEmbed.postUrn}
             title={DOCKNOCK.linkedInEmbed.title}
@@ -31,7 +31,7 @@ export function DocKnockSection() {
           />
         </div>
 
-        <div className="flex flex-col gap-5 xl:col-span-4 xl:justify-start">
+        <div className="flex min-w-0 flex-col gap-5 lg:col-span-5 lg:justify-start xl:col-span-4">
           <img
             src={DOCKNOCK.logoWhite}
             alt="DocKnock logo"
@@ -45,20 +45,18 @@ export function DocKnockSection() {
           </div>
           <p className="text-sm md:text-base leading-relaxed text-ink-soft">{DOCKNOCK.role}</p>
           <div className="rounded-xl border border-line bg-elevated p-4 sm:p-5">
-            <dl className="grid gap-5 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-5">
+            <dl className="grid gap-5">
               {(
                 [
                   { label: 'Problem', value: DOCKNOCK.problem },
                   { label: 'Solution', value: DOCKNOCK.solution },
                   { label: 'Professionals', value: DOCKNOCK.professionals },
-                  { label: 'Context', value: DOCKNOCK.context, fullWidth: true },
+                  { label: 'Context', value: DOCKNOCK.context },
                 ] as const
-              ).map(({ label, value, fullWidth }) => (
+              ).map(({ label, value }) => (
                 <div
                   key={label}
-                  className={`border-t border-line pt-5 first:border-t-0 first:pt-0 sm:[&:nth-child(-n+2)]:border-t-0 sm:[&:nth-child(-n+2)]:pt-0 ${
-                    fullWidth ? 'sm:col-span-2' : ''
-                  }`}
+                  className="border-t border-line pt-5 first:border-t-0 first:pt-0"
                 >
                   <dt className="mb-1.5 text-[0.6875rem] font-semibold uppercase tracking-[0.2em] text-ink">
                     {label}

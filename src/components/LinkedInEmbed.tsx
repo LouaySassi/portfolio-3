@@ -63,12 +63,12 @@ export function LinkedInEmbed({
   return (
     <div
       ref={containerRef}
-      className={`flex h-full flex-col gap-4 ${isLargePoster ? 'xl:min-h-0 xl:flex-1' : ''}`}
+      className={`flex h-full w-full flex-col gap-4 ${isLargePoster ? 'min-w-0 flex-1 lg:min-h-0' : ''}`}
     >
       <div
         className={`relative overflow-hidden rounded-2xl border border-line bg-surface ${
           isLargePoster
-            ? 'aspect-[16/10] min-h-[320px] sm:min-h-[420px] xl:aspect-auto xl:min-h-[640px] xl:flex-1'
+            ? 'aspect-[16/10] min-h-[320px] sm:min-h-[420px] lg:aspect-auto lg:min-h-[620px] lg:flex-1 xl:min-h-[640px]'
             : 'aspect-[4/5] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[420px]'
         }`}
       >
