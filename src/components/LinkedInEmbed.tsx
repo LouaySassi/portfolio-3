@@ -7,6 +7,8 @@ interface LinkedInEmbedProps {
   /** Poster image shown before / behind embed */
   posterSrc: string;
   posterAlt: string;
+  posterWidth?: number;
+  posterHeight?: number;
   title: string;
   description: string;
   linkedInUrl: string;
@@ -22,6 +24,8 @@ export function LinkedInEmbed({
   postUrn,
   posterSrc,
   posterAlt,
+  posterWidth = 1672,
+  posterHeight = 941,
   title,
   description,
   linkedInUrl,
@@ -58,8 +62,8 @@ export function LinkedInEmbed({
         <img
           src={posterSrc}
           alt={posterAlt}
-          width={1200}
-          height={900}
+          width={posterWidth}
+          height={posterHeight}
           loading="lazy"
           decoding="async"
           className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${

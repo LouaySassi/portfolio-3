@@ -1,6 +1,6 @@
 # Louay Sassi — Portfolio
 
-> Software engineer and product builder at Linedata (Tunisia). Founder of King Solar Agency (2024–2025). Co-built DocKnock with Team Arsenal — 1st prize at MutualHack 3.0 by MAE 2026 (10,000 TND), now incubated with MAZAM.
+> Software engineer and product builder at Linedata (Tunisia). Founder of King Solar Agency (2024–2025). Led DocKnock with Team Arsenal — a home healthcare platform connecting patients and families with nearby healthcare professionals who provide care at home. 1st prize at MutualHack 3.0 by MAE 2026 (10,000 TND); working mobile prototype in MAZAM incubation.
 
 Canonical URL: https://louaysassi.netlify.app/
 
@@ -14,7 +14,9 @@ Canonical URL: https://louaysassi.netlify.app/
 
 ## Featured product: DocKnock
 
-DocKnock is a healthcare platform for secure communication between medical professionals and patients. Built by Team Arsenal (Iyed Grassi, Louay Sassi, Leith Saddouri) for MutualHack 3.0 by MAE (May 22–23, 2026, Tunis). Won 1st prize (10,000 TND) among ~2,000+ applicants / 24 finalist teams. Now in incubation with MAZAM.
+DocKnock is a home healthcare platform connecting patients and families with nearby healthcare professionals who provide care directly at home. It enables patients and families to request and book nurses, doctors, physiotherapists, and other healthcare professionals for care at home.
+
+Built by Team Arsenal (Iyed Grassi, Louay Sassi, Leith Saddouri) for MutualHack 3.0 by MAE (May 22–23, 2026, Tunis). Louay led product planning, technical delivery, and the final pitch. Won 1st prize (10,000 TND) among 2,200+ applications and 100 finalists forming 24 teams. Working mobile prototype, now in incubation with MAZAM — not a publicly available app.
 
 ## Site sections
 

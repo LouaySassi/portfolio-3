@@ -41,8 +41,8 @@ export function IdentityHero() {
           <img
             src={SITE.heroImage}
             alt="Louay Sassi speaking during an Express FM interview"
-            width={1200}
-            height={1500}
+            width={1672}
+            height={941}
             fetchPriority="high"
             decoding="async"
             className="w-full aspect-[4/5] object-cover object-[50%_18%] opacity-90"

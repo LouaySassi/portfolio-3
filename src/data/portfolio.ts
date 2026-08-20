@@ -6,7 +6,7 @@ export const SITE = {
   github: 'https://github.com/LouaySassi',
   resume: '/Louay_Cheker_Sassi_CV english 9-7-2026.pdf',
   domain: 'https://louaysassi.netlify.app',
-  heroImage: '/1dc51c20-d842-4120-9013-32b8d793ab00.png',
+  heroImage: '/louay-sassi-express-fm-interview-docknock-mutualhack.png',
 } as const;
 
 export const NAV_ITEMS = [
@@ -27,14 +27,23 @@ export const DOCKNOCK = {
   title: 'DocKnock',
   meta: 'MutualHack 3.0 by MAE · 1st Prize · 2026',
   summary:
-    'Healthcare platform connecting patients with nearby professionals through secure communication and care workflows.',
+    'DocKnock is a home healthcare platform connecting patients and families with nearby healthcare professionals who provide care directly at home.',
+  summaryDetail:
+    'DocKnock makes home healthcare easier to access by allowing patients and families to request and book nurses, doctors, physiotherapists, and other healthcare professionals for care at home.',
   role:
     'Led product planning, technical delivery, and the final pitch. Now growing through incubation with MAZAM.',
+  problem:
+    'Access to medical care at home can still depend on personal contacts, phone numbers, and family members coordinating care.',
+  solution:
+    "DocKnock provides a digital way for patients and families to request healthcare professionals who come directly to the patient's home.",
+  professionals: 'Nurses · Physiotherapists · Doctors · Other healthcare professionals',
+  context:
+    'Team Arsenal · MutualHack 3.0 by MAE 2026 · 1st Prize (10,000 TND) among 2,200+ applications and 100 finalists forming 24 teams · MAZAM incubation',
   logoWhite: '/docknock-white.png',
   logoBlue: '/docknock-blue.png',
   teamPhoto: '/louay-sassi-team-arsenal-mutualhack-mae-2026-first-prize.jpg',
   teamCaption: 'Team Arsenal · MutualHack 3.0 by MAE',
-  interviewPoster: '/1dc51c20-d842-4120-9013-32b8d793ab00.png',
+  interviewPoster: '/louay-sassi-express-fm-interview-docknock-mutualhack.png',
   links: {
     esb: 'https://www.esb.tn/1er-prix-mutualhack-by-mae-2026/',
     managers:
@@ -60,21 +69,29 @@ export interface PortfolioProject {
   problem: string;
   ownership: string;
   image: string;
+  imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
   logo?: string;
   link?: string;
+  featuredAnchor?: string;
 }
 
 export const PROJECTS: PortfolioProject[] = [
   {
     id: 'docknock',
     title: 'DocKnock',
-    context: 'Product · 2026',
-    outcome: 'Shipped and pitched a healthcare product now in MAZAM incubation.',
-    problem: 'Patients and nearby healthcare professionals lack a direct, secure digital path.',
-    ownership: 'Led product planning, architecture, delivery, and pitch.',
+    context: 'Home Healthcare Platform · 2026',
+    outcome: 'MutualHack 2026 · 1st Prize · MAZAM Incubation',
+    problem: 'Home care still depends on personal contacts and family members coordinating by phone.',
+    ownership: 'Led product planning, technical delivery, and the final pitch.',
     image: '/louay-sassi-team-arsenal-mutualhack-mae-2026-first-prize.jpg',
+    imageAlt: 'Team Arsenal accepting first prize for DocKnock at MutualHack by MAE',
+    imageWidth: 1280,
+    imageHeight: 853,
     logo: DOCKNOCK.logoBlue,
     link: DOCKNOCK.links.louayPost,
+    featuredAnchor: 'docknock',
   },
   {
     id: 'docai',

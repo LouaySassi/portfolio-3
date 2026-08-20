@@ -7,11 +7,7 @@
     <title>Louay Sassi — Software Engineer &amp; Product Builder @ Linedata</title>
     <meta
       name="description"
-      content="Louay Sassi is a software engineer at Linedata and product builder behind DocKnock, MutualHack by MAE 2026 first-prize winner. Builds SaaS and AI systems end to end."
-    />
-    <meta
-      name="keywords"
-      content="Louay Sassi, Louay Cheker Sassi, software engineer, Linedata, DocKnock, MutualHack MAE, Tunisia, SaaS, AI"
+      content="Louay Sassi is a software engineer at Linedata in Tunisia. He led DocKnock, a home healthcare platform connecting patients with professionals for care at home."
     />
     <meta name="author" content="Louay Sassi" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -25,7 +21,7 @@
     <meta property="og:title" content="Louay Sassi — Software Engineer &amp; Product Builder @ Linedata" />
     <meta
       property="og:description"
-      content="Software engineer at Linedata. Built DocKnock — MutualHack by MAE 2026 first-prize product, now incubated with MAZAM."
+      content="Software engineer at Linedata. Led DocKnock, a home healthcare platform connecting patients with professionals for care at home. MutualHack 2026 1st prize, now in MAZAM incubation."
     />
     <meta property="og:image" content="https://louaysassi.netlify.app/louay-sassi-og.jpg" />
     <meta property="og:image:width" content="1200" />
@@ -40,12 +36,12 @@
     <meta name="twitter:title" content="Louay Sassi — Software Engineer &amp; Product Builder @ Linedata" />
     <meta
       name="twitter:description"
-      content="Software engineer at Linedata. Built DocKnock — MutualHack by MAE 2026 first-prize product, now incubated with MAZAM."
+      content="Software engineer at Linedata. Led DocKnock, a home healthcare platform connecting patients with professionals for care at home. MutualHack 2026 1st prize, now in MAZAM incubation."
     />
     <meta name="twitter:image" content="https://louaysassi.netlify.app/louay-sassi-og.jpg" />
     <meta name="twitter:image:alt" content="Louay Sassi — software engineer and product builder" />
 
-    <!-- Structured Data: Person + ProfilePage + DocKnock project -->
+    <!-- Structured Data: Person + ProfilePage + DocKnock + coverage -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -58,7 +54,7 @@
             "isPartOf": { "@id": "https://louaysassi.netlify.app/#website" },
             "about": { "@id": "https://louaysassi.netlify.app/#person" },
             "mainEntity": { "@id": "https://louaysassi.netlify.app/#person" },
-            "dateModified": "2026-07-12"
+            "dateModified": "2026-08-20"
           },
           {
             "@type": "WebSite",
@@ -75,12 +71,13 @@
             "name": "Louay Sassi",
             "alternateName": "Louay Cheker Sassi",
             "jobTitle": "Software Engineer",
-            "description": "Software engineer and product builder at Linedata. Founder of King Solar Agency (2024–2025). Co-built DocKnock with Team Arsenal — first prize at MutualHack 3.0 by MAE 2026 (10,000 TND), now incubated with MAZAM.",
+            "description": "Software engineer and product builder at Linedata. Founder of King Solar Agency (2024–2025). Led DocKnock — a home healthcare platform connecting patients and families with nearby healthcare professionals who provide care at home — with Team Arsenal through product planning, technical delivery, and the final pitch. First prize at MutualHack 3.0 by MAE 2026; working mobile prototype in MAZAM incubation.",
             "worksFor": {
               "@type": "Organization",
               "name": "Linedata",
               "url": "https://www.linedata.com"
             },
+            "memberOf": { "@id": "https://louaysassi.netlify.app/#team-arsenal" },
             "alumniOf": [
               {
                 "@type": "CollegeOrUniversity",
@@ -100,16 +97,19 @@
             },
             "image": [
               "https://louaysassi.netlify.app/louay-sassi-og.jpg",
-              "https://louaysassi.netlify.app/1dc51c20-d842-4120-9013-32b8d793ab00.png",
+              "https://louaysassi.netlify.app/louay-sassi-express-fm-interview-docknock-mutualhack.png",
               "https://louaysassi.netlify.app/louay-sassi-express-fm-interview-mutualhack-2026.jpg",
               "https://louaysassi.netlify.app/profile.png"
             ],
             "sameAs": [
               "https://www.linkedin.com/in/louaysassi",
-              "https://github.com/LouaySassi",
-              "https://www.esb.tn/1er-prix-mutualhack-by-mae-2026/",
-              "https://managers.tn/2026/06/08/mae-mutual-hack-linnovation-au-service-de-lhumain/",
-              "https://www.linkedin.com/posts/louaysassi_docknock-mutualhack-maeassurances-ugcPost-7464304487688654849-eGTO/"
+              "https://github.com/LouaySassi"
+            ],
+            "subjectOf": [
+              { "@id": "https://louaysassi.netlify.app/#coverage-esb" },
+              { "@id": "https://louaysassi.netlify.app/#coverage-managers" },
+              { "@id": "https://louaysassi.netlify.app/#coverage-express-fm" },
+              { "@id": "https://louaysassi.netlify.app/#coverage-linkedin-award" }
             ],
             "knowsAbout": [
               "Product Management",
@@ -123,15 +123,81 @@
             ]
           },
           {
-            "@type": "SoftwareApplication",
+            "@type": "Organization",
+            "@id": "https://louaysassi.netlify.app/#team-arsenal",
+            "name": "Team Arsenal",
+            "member": [
+              { "@type": "Person", "name": "Iyed Grassi" },
+              { "@id": "https://louaysassi.netlify.app/#person" },
+              { "@type": "Person", "name": "Leith Saddouri" }
+            ]
+          },
+          {
+            "@type": "MobileApplication",
             "@id": "https://louaysassi.netlify.app/#docknock",
             "name": "DocKnock",
             "applicationCategory": "HealthApplication",
-            "operatingSystem": "Web",
-            "description": "Healthcare platform for secure communication between medical professionals and patients. First prize at MutualHack 3.0 by MAE 2026.",
-            "creator": { "@id": "https://louaysassi.netlify.app/#person" },
-            "award": "1st Prize, MutualHack 3.0 by MAE 2026",
-            "url": "https://louaysassi.netlify.app/#docknock"
+            "description": "DocKnock is a home healthcare platform connecting patients and families with nearby healthcare professionals who provide care directly at home. Patients and families can request and book nurses, doctors, physiotherapists, and other healthcare professionals for care at home. Working mobile prototype in MAZAM incubation; not a publicly available app.",
+            "creator": { "@id": "https://louaysassi.netlify.app/#team-arsenal" },
+            "award": "1st Prize MutualHack 3.0 by MAE 2026",
+            "url": "https://louaysassi.netlify.app/#docknock",
+            "image": [
+              "https://louaysassi.netlify.app/docknock-blue.png",
+              "https://louaysassi.netlify.app/docknock-white.png"
+            ],
+            "logo": "https://louaysassi.netlify.app/docknock-blue.png",
+            "subjectOf": [
+              { "@id": "https://louaysassi.netlify.app/#coverage-esb" },
+              { "@id": "https://louaysassi.netlify.app/#coverage-managers" },
+              { "@id": "https://louaysassi.netlify.app/#coverage-express-fm" },
+              { "@id": "https://louaysassi.netlify.app/#coverage-linkedin-award" }
+            ],
+            "citation": [
+              { "@id": "https://louaysassi.netlify.app/#coverage-esb" },
+              { "@id": "https://louaysassi.netlify.app/#coverage-managers" },
+              { "@id": "https://louaysassi.netlify.app/#coverage-express-fm" },
+              { "@id": "https://louaysassi.netlify.app/#coverage-linkedin-award" }
+            ]
+          },
+          {
+            "@type": "Article",
+            "@id": "https://louaysassi.netlify.app/#coverage-esb",
+            "url": "https://www.esb.tn/1er-prix-mutualhack-by-mae-2026/",
+            "name": "1er Prix MutualHack by MAE 2026",
+            "about": [
+              { "@id": "https://louaysassi.netlify.app/#person" },
+              { "@id": "https://louaysassi.netlify.app/#docknock" }
+            ]
+          },
+          {
+            "@type": "Article",
+            "@id": "https://louaysassi.netlify.app/#coverage-managers",
+            "url": "https://managers.tn/2026/06/08/mae-mutual-hack-linnovation-au-service-de-lhumain/",
+            "name": "MAE Mutual Hack : l'innovation au service de l'humain",
+            "about": [
+              { "@id": "https://louaysassi.netlify.app/#person" },
+              { "@id": "https://louaysassi.netlify.app/#docknock" }
+            ]
+          },
+          {
+            "@type": "SocialMediaPosting",
+            "@id": "https://louaysassi.netlify.app/#coverage-express-fm",
+            "url": "https://www.linkedin.com/posts/efmabrplateauspaezcialabrmutualhack-ugcPost-7464688001516806144-G430/",
+            "name": "Express FM interview with Team Arsenal after MutualHack 3.0 by MAE 2026",
+            "about": [
+              { "@id": "https://louaysassi.netlify.app/#person" },
+              { "@id": "https://louaysassi.netlify.app/#docknock" }
+            ]
+          },
+          {
+            "@type": "SocialMediaPosting",
+            "@id": "https://louaysassi.netlify.app/#coverage-linkedin-award",
+            "url": "https://www.linkedin.com/posts/louaysassi_docknock-mutualhack-maeassurances-ugcPost-7464304487688654849-eGTO/",
+            "name": "Louay Sassi on DocKnock winning MutualHack 3.0 by MAE 2026",
+            "about": [
+              { "@id": "https://louaysassi.netlify.app/#person" },
+              { "@id": "https://louaysassi.netlify.app/#docknock" }
+            ]
           }
         ]
       }
@@ -151,11 +217,14 @@
         </p>
         <h2>DocKnock</h2>
         <p>
-          DocKnock is a healthcare platform connecting patients with nearby
-          professionals through secure communication and care workflows. Louay led
-          product planning, technical delivery, and the final pitch with Team Arsenal
+          DocKnock is a home healthcare platform connecting patients and families
+          with nearby healthcare professionals who provide care directly at home.
+          Patients and families can request and book nurses, doctors, physiotherapists,
+          and other healthcare professionals for care at home. Louay led product
+          planning, technical delivery, and the final pitch with Team Arsenal
           (Iyed Grassi, Louay Sassi, Leith Saddouri). DocKnock won 1st prize at
-          MutualHack 3.0 by MAE 2026 and is now in incubation with MAZAM.
+          MutualHack 3.0 by MAE 2026 and is a working mobile prototype in incubation
+          with MAZAM.
         </p>
         <p>
           Coverage:
@@ -164,7 +233,7 @@
         </p>
         <h2>Selected work</h2>
         <ul>
-          <li>DocKnock — MutualHack 2026 first prize, MAZAM incubation</li>
+          <li>DocKnock — Home Healthcare Platform</li>
           <li>DocAI — AI patient management with IBM FileNet (BestWay IT)</li>
           <li>Tracky — local-first personal finance tracker</li>
           <li>Binomi — roommate matching product</li>

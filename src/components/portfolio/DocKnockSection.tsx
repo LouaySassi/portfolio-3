@@ -23,6 +23,8 @@ export function DocKnockSection() {
             description={DOCKNOCK.linkedInEmbed.description}
             posterSrc={DOCKNOCK.interviewPoster}
             posterAlt="Louay Sassi interviewed on Express FM about DocKnock"
+            posterWidth={1672}
+            posterHeight={941}
             linkedInUrl={DOCKNOCK.links.expressFm}
             autoLoadOnView={false}
           />
@@ -34,10 +36,30 @@ export function DocKnockSection() {
             alt="DocKnock logo"
             width={96}
             height={96}
-            className="h-20 w-20 rounded-2xl object-cover"
+            className="h-20 w-20 rounded-2xl object-contain"
           />
-          <p className="text-base md:text-lg leading-relaxed text-ink">{DOCKNOCK.summary}</p>
+          <div className="space-y-3">
+            <p className="text-base md:text-lg leading-relaxed text-ink">{DOCKNOCK.summary}</p>
+            <p className="text-sm md:text-base leading-relaxed text-ink-soft">{DOCKNOCK.summaryDetail}</p>
+          </div>
           <p className="text-sm md:text-base leading-relaxed text-ink-soft">{DOCKNOCK.role}</p>
+          <dl className="space-y-3">
+            {(
+              [
+                ['Problem', DOCKNOCK.problem],
+                ['Solution', DOCKNOCK.solution],
+                ['Professionals', DOCKNOCK.professionals],
+                ['Context', DOCKNOCK.context],
+              ] as const
+            ).map(([label, value]) => (
+              <div key={label}>
+                <dt className="mb-1 text-xs font-medium uppercase tracking-[0.18em] text-ink-muted">
+                  {label}
+                </dt>
+                <dd className="text-sm leading-relaxed text-ink-soft">{value}</dd>
+              </div>
+            ))}
+          </dl>
           <div className="flex flex-wrap gap-4 pt-1">
             <a
               href={DOCKNOCK.links.esb}
@@ -45,7 +67,7 @@ export function DocKnockSection() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-sm text-accent hover:text-accent-strong"
             >
-              ESB coverage
+              ESB: MutualHack first prize
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
             <a
@@ -54,7 +76,7 @@ export function DocKnockSection() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-sm text-accent hover:text-accent-strong"
             >
-              Managers.tn
+              Managers.tn: MutualHack coverage
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
             <a
@@ -63,7 +85,7 @@ export function DocKnockSection() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-sm text-accent hover:text-accent-strong"
             >
-              Full interview
+              Express FM interview
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
           </div>
@@ -73,9 +95,9 @@ export function DocKnockSection() {
       <figure className="mt-10 md:mt-14">
         <img
           src={DOCKNOCK.teamPhoto}
-          alt="Team Arsenal accepting first prize at MutualHack by MAE"
-          width={1600}
-          height={900}
+          alt="Team Arsenal accepting first prize for DocKnock at MutualHack by MAE"
+          width={1280}
+          height={853}
           loading="lazy"
           decoding="async"
           className="w-full aspect-[21/9] object-cover object-center"

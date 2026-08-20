@@ -3,28 +3,40 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://louaysassi.netlify.app/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://louaysassi.netlify.app/1dc51c20-d842-4120-9013-32b8d793ab00.png</image:loc>
+      <image:loc>https://louaysassi.netlify.app/louay-sassi-express-fm-interview-docknock-mutualhack.png</image:loc>
       <image:title>Louay Sassi Express FM interview</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://louaysassi.netlify.app/louay-sassi-express-fm-interview-mutualhack-2026.jpg</image:loc>
-      <image:title>Louay Sassi Express FM interview MutualHack 2026</image:title>
-    </image:image>
-    <image:image>
       <image:loc>https://louaysassi.netlify.app/louay-sassi-team-arsenal-mutualhack-mae-2026-first-prize.jpg</image:loc>
-      <image:title>Team Arsenal MutualHack MAE 2026 first prize</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://louaysassi.netlify.app/profile.png</image:loc>
-      <image:title>Louay Sassi professional headshot</image:title>
+      <image:title>Team Arsenal MutualHack MAE first prize</image:title>
     </image:image>
     <image:image>
       <image:loc>https://louaysassi.netlify.app/louay-sassi-og.jpg</image:loc>
       <image:title>Louay Sassi Open Graph preview</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://louaysassi.netlify.app/docknock-white.png</image:loc>
+      <image:title>DocKnock logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://louaysassi.netlify.app/docknock-blue.png</image:loc>
+      <image:title>DocKnock logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://louaysassi.netlify.app/docai.png</image:loc>
+      <image:title>DocAI project</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://louaysassi.netlify.app/tracky.png</image:loc>
+      <image:title>Tracky project</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://louaysassi.netlify.app/binomi.png</image:loc>
+      <image:title>Binomi project</image:title>
     </image:image>
   </url>
 </urlset>

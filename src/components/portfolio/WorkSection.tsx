@@ -25,9 +25,9 @@ export function WorkSection() {
             >
               <img
                 src={project.image}
-                alt={`${project.title} project visual`}
-                width={900}
-                height={560}
+                alt={project.imageAlt ?? `${project.title} project visual`}
+                width={project.imageWidth ?? 900}
+                height={project.imageHeight ?? 560}
                 loading="lazy"
                 decoding="async"
                 className="h-56 w-full object-cover sm:h-64"
@@ -41,12 +41,23 @@ export function WorkSection() {
                       alt=""
                       width={36}
                       height={36}
-                      className="h-9 w-9 rounded-md object-cover bg-white"
+                      className={`h-9 w-9 rounded-md bg-white ${project.id === 'docknock' ? 'object-contain' : 'object-cover'}`}
                       aria-hidden
                     />
                   ) : null}
                   <div className="min-w-0">
-                    <h3 className="text-xl font-semibold tracking-tight text-ink">{project.title}</h3>
+                    <h3 className="text-xl font-semibold tracking-tight text-ink">
+                      {project.featuredAnchor ? (
+                        <a
+                          href={`#${project.featuredAnchor}`}
+                          className="transition-colors hover:text-accent"
+                        >
+                          {project.title}
+                        </a>
+                      ) : (
+                        project.title
+                      )}
+                    </h3>
                     <p className="mt-1 text-sm text-ink-muted">{project.context}</p>
                   </div>
                 </div>
@@ -90,7 +101,7 @@ export function WorkSection() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors hover:text-accent-strong"
                     >
-                      Open
+                      {project.id === 'docknock' ? 'View award post' : 'Open'}
                       <ExternalLink className="h-3.5 w-3.5" />
                     </a>
                   ) : null}
