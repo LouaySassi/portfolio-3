@@ -14,6 +14,8 @@ interface LinkedInEmbedProps {
   linkedInUrl: string;
   /** Load the live embed when scrolled into view (default: click-to-play) */
   autoLoadOnView?: boolean;
+  /** Larger poster area for featured sections with more adjacent copy */
+  posterSize?: 'default' | 'large';
 }
 
 /**
@@ -30,7 +32,9 @@ export function LinkedInEmbed({
   description,
   linkedInUrl,
   autoLoadOnView = false,
+  posterSize = 'default',
 }: LinkedInEmbedProps) {
+  const isLargePoster = posterSize === 'large';
   const containerRef = useRef<HTMLDivElement>(null);
   const [inView, setInView] = useState(false);
   const [showEmbed, setShowEmbed] = useState(false);
@@ -57,8 +61,17 @@ export function LinkedInEmbed({
   const embedSrc = `https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:${postUrn}?collapsed=1`;
 
   return (
-    <div ref={containerRef} className="flex flex-col gap-4 h-full">
-      <div className="relative overflow-hidden rounded-2xl border border-line bg-surface aspect-[4/5] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[420px]">
+    <div
+      ref={containerRef}
+      className={`flex h-full flex-col gap-4 ${isLargePoster ? 'xl:min-h-0 xl:flex-1' : ''}`}
+    >
+      <div
+        className={`relative overflow-hidden rounded-2xl border border-line bg-surface ${
+          isLargePoster
+            ? 'aspect-[16/10] min-h-[320px] sm:min-h-[420px] xl:aspect-auto xl:min-h-[640px] xl:flex-1'
+            : 'aspect-[4/5] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[420px]'
+        }`}
+      >
         <img
           src={posterSrc}
           alt={posterAlt}
